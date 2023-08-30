@@ -1,5 +1,19 @@
-/** Variables are divided into sections labeled by: **/
+/** Color variables are divided into sections labeled by: **/
 /** greekAlphabet-purpose-number **/
 
-//Alpha is the primary and default color scheme of the site
+// Alpha is the primary and default color scheme of the site
 $alpha-background-one: #fcffd4;
+$alpha-text-one: #1f2836;
+$alpha-text-two: #33677c;
+
+/** Structural **/
+$gutters: 50px;
+$maxWidth: 100%;
+
+/** Font sizes **/
+$font-xsmall: 14px;
+$font-small: 16px;
+$font-medium: 24px;
+$font-large: 32px;
+$font-xlarge: 48px;
+$font-xxlarge: 72px;

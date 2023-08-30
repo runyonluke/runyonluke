@@ -1,6 +1,23 @@
-@use "../../styles/variables.module";
+@import "../../styles/variables.module";
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   height: 100vh;
   width: 100%;
+  max-width: $maxWidth;
+  padding: $gutters;
+
+  font-size: $font-medium;
+  color: $alpha-text-two;
+}
+
+.focused {
+  font-size: $font-xxlarge;
+  font-weight: bold;
+  line-height: 0.95;
+  margin: 0.4rem 0 1.2rem;
+  color: $alpha-text-one;
 }
