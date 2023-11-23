@@ -1,0 +1,18 @@
+@import "../../styles/variables.module";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: $font-medium;
+  color: $alpha-accent-two;
+  height: 10vh;
+  padding: 2rem;
+}
+
+.icon {
+  margin: 1rem;
+  width: $font-large;
+  height: $font-large;
+}

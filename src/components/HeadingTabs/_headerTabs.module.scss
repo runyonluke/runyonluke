@@ -1,0 +1,29 @@
+@import "../../styles/variables.module";
+
+.root {
+  width: 100%;
+  height: 65px;
+  font-size: $font-medium;
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  border-top: 1px solid $alpha-text-one;
+  box-shadow: 0 3px 8px 0 $alpha-box-shadow;
+}
+
+.trigger {
+  background-color: unset;
+  color: $alpha-accent-two;
+
+  border: none;
+  cursor: unset;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.selectedTrigger {
+  @extend .trigger;
+
+  border-bottom: 5px solid $alpha-accent-two;
+}

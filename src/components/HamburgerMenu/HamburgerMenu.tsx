@@ -1,6 +1,6 @@
 import React from "react";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import styles from "./_hamburgerMenu.module.scss";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 /**
  * The website controls for the mobile version, a collapsible hamburger menu
@@ -11,7 +11,7 @@ export default function HamburgerMenu() {
 
   return (
     <div className={styles.container}>
-      <HamburgerMenuIcon />
+      <HamburgerMenuIcon aria-label="Menu" />
     </div>
   );
 }

@@ -2,9 +2,16 @@
 /** greekAlphabet-purpose-number **/
 
 // Alpha is the primary and default color scheme of the site
-$alpha-background-one: #fcffd4;
+$alpha-background-one: #fefff1;
+
 $alpha-text-one: #1f2836;
 $alpha-text-two: #33677c;
+
+$alpha-accent-one: #e3811e;
+$alpha-accent-two: #b85a1a;
+$alpha-accent-three: #6a3722;
+
+$alpha-box-shadow: rgba(0, 0, 0, 0.25);
 
 /** Structural **/
 $gutters: 50px;
@@ -17,3 +24,13 @@ $font-medium: 24px;
 $font-large: 32px;
 $font-xlarge: 48px;
 $font-xxlarge: 72px;
+
+// allows the export of scss variables to be used in components
+:export {
+  font-xsmall: $font-xsmall;
+  font-small: $font-small;
+  font-medium: $font-medium;
+  font-large: $font-large;
+  font-xlarge: $font-xlarge;
+  font-xxlarge: $font-xxlarge;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./_hello.module.scss";
+
 /**
  * The landing page of the website that contains the site's greeting
  */
