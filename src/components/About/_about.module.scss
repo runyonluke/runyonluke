@@ -1,0 +1,39 @@
+@import "../../styles/variables.module";
+
+.container {
+  width: $maxWidth;
+  padding: $gutters;
+}
+
+.container > :first-child {
+  margin-top: 25px;
+}
+
+.imageContainer {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+
+  img {
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 $alpha-box-shadow;
+  }
+}
+
+.imageContainer > img:first-child {
+  width: 90%;
+  height: auto;
+
+  margin-bottom: 50px;
+}
+
+.imageContainer > img:last-child {
+  // overlapping the images
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 50%;
+  height: auto;
+}

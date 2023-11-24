@@ -6,6 +6,7 @@ import Hello from "./components/Hello/Hello";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
 import MoreAboutMe from "./components/MoreAboutMe/MoreAboutMe";
 import HeadingTabs from "./components/HeadingTabs/HeadingTabs";
+import About from "./components/About/About";
 
 function App(): React.ReactElement {
   return (
@@ -16,6 +17,7 @@ function App(): React.ReactElement {
       </div>
       <MoreAboutMe />
       <HeadingTabs />
+      <About />
     </div>
   );
 }

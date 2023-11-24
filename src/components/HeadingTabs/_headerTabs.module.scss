@@ -1,16 +1,26 @@
 @import "../../styles/variables.module";
 
+// keep track because it is used more than once
+$height: 65px;
+
 .root {
   width: 100%;
-  height: 65px;
+  height: $height;
   font-size: $font-medium;
 
   padding-right: 1rem;
   padding-left: 1rem;
 
+  z-index: 10;
+
   border-top: 1px solid $alpha-text-one;
   box-shadow: 0 3px 8px 0 $alpha-box-shadow;
   background-color: $alpha-background-one;
+
+  // avoid putting margin on last tab
+  .trigger:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .rootFixed {
@@ -21,6 +31,12 @@
   left: 0;
 
   border-top: none;
+
+  // we want to add margin to the next element to offset
+  // the tabs becoming fixed at top of screen
+  + div {
+    margin-top: $height;
+  }
 }
 
 .trigger {
@@ -31,7 +47,7 @@
   cursor: unset;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.75rem;
 }
 
 .selectedTrigger {
