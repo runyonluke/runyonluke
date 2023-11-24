@@ -5,5 +5,6 @@ export declare const fontXlarge: string;
 export declare const fontXsmall: string;
 export declare const fontXxlarge: string;
 export declare const root: string;
+export declare const rootFixed: string;
 export declare const selectedTrigger: string;
 export declare const trigger: string;

@@ -17,3 +17,8 @@ code {
 *::after {
   box-sizing: border-box;
 }
+
+:root {
+  height: 100vh;
+  overflow-y: scroll;
+}

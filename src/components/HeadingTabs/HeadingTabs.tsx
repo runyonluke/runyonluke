@@ -16,8 +16,23 @@ export default function HeadingTabs(): React.ReactElement {
   //indicates which section of the landing page the user is scrolled to
   const selectedTab = useSelector((state: RootState) => state.root.selectedTab);
 
+  const [scroll, setScroll] = React.useState<number>(0);
+
+  React.useEffect(() => {
+    window.addEventListener(
+      "scroll",
+      () => {
+        setScroll(window.scrollY);
+      },
+      { passive: true }
+    );
+  });
+
   return (
-    <Tabs.Root className={styles.root} value={selectedTab}>
+    <Tabs.Root
+      className={scroll > window.innerHeight ? styles.rootFixed : styles.root}
+      value={selectedTab}
+    >
       <Tabs.List>
         {Object.values(HEADING_TABS).map((heading) => (
           <Tabs.Trigger

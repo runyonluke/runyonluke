@@ -10,6 +10,17 @@
 
   border-top: 1px solid $alpha-text-one;
   box-shadow: 0 3px 8px 0 $alpha-box-shadow;
+  background-color: $alpha-background-one;
+}
+
+.rootFixed {
+  @extend .root;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  border-top: none;
 }
 
 .trigger {
@@ -20,6 +31,7 @@
   cursor: unset;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .selectedTrigger {
