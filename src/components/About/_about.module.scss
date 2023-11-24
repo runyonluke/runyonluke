@@ -17,8 +17,12 @@
 
   img {
     border-radius: 4px;
-    box-shadow: 0 4px 8px 0 $alpha-box-shadow;
+    box-shadow:
+      -10px 10px $alpha-accent-two-transparent,
+      0 4px 4px 0 $alpha-box-shadow;
   }
+
+  margin-bottom: 50px;
 }
 
 .imageContainer > img:first-child {

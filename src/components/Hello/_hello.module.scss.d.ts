@@ -1,3 +1,4 @@
+export declare const bouncy: string;
 export declare const container: string;
 export declare const focused: string;
 export declare const fontLarge: string;
