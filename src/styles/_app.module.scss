@@ -7,6 +7,7 @@
   background-color: $alpha-background-one;
   //TODO: temp, dev only
   padding-bottom: 100vh;
+  color: $alpha-text-two;
 }
 
 .landing {
@@ -16,4 +17,12 @@
   width: 100%;
   max-width: $maxWidth;
   padding: $gutters;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+a:hover {
+  text-decoration: underline;
 }

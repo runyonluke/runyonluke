@@ -1,0 +1,56 @@
+@import "../../styles/variables.module";
+
+.container {
+  position: relative;
+
+  display: block;
+  text-decoration: none;
+
+  box-shadow: 0 0 8px 0 $box-shadow-one;
+
+  padding: 2rem;
+  background-color: $alpha-background-two;
+
+  background-image: url("../../../public/github-mark.svg");
+  background-repeat: no-repeat;
+  background-position-x: 135%;
+  background-position-y: -50%;
+  background-size: 50%;
+}
+
+.container:hover {
+  text-decoration: none;
+}
+
+.headerContainer {
+  display: flex;
+
+  span {
+    display: block;
+  }
+}
+
+.profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+
+  + div {
+    margin-left: 1rem;
+  }
+}
+
+.projectName {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.github {
+  width: 50%;
+  height: auto;
+
+  top: 10%;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+}

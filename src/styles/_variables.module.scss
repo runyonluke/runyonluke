@@ -3,6 +3,7 @@
 
 // Alpha is the primary and default color scheme of the site
 $alpha-background-one: #fefff1;
+$alpha-background-two: white;
 
 $alpha-text-one: #1f2836;
 $alpha-text-two: #33677c;
@@ -13,7 +14,24 @@ $alpha-accent-two: #b85a1a;
 $alpha-accent-two-transparent: rgba(184, 90, 26, 0.5);
 $alpha-accent-three: #6a3722;
 
-$alpha-box-shadow: rgba(0, 0, 0, 0.25);
+// Beta is the secondary and dark-mode color scheme of the site
+$beta-background-one: #e8ca94;
+
+$beta-text-one: #6a3722;
+
+$beta-accent-one: #b85a1a;
+$alpha-accent-two-transparent: rgba(184, 90, 26, 0.5);
+
+// Beta is the secondary and dark-mode color scheme of the site
+$omega-background-one: #1f2836;
+
+$omega-text-one: #fefff1;
+
+$omega-accent-one: #33677c;
+$omega-accent-two-transparent: rgba(51, 103, 124, 0.5);
+
+// box shadow
+$box-shadow-one: rgba(0, 0, 0, 0.25);
 
 /** Structural **/
 $gutters: 50px;

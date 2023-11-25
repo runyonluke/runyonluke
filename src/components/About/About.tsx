@@ -8,6 +8,7 @@ export default function About(): React.ReactElement {
         <img src="grad-b&w-min.jpg" alt="Luke Runyon graduation" />
         <img src="wedding-b&w-min.jpg" alt="Luke Runyon wedding" />
       </div>
+      <h1>About me</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptas
         laborum error libero praesentium doloremque omnis sed blanditiis maxime?
