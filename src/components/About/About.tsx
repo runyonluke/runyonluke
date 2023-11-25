@@ -1,12 +1,30 @@
 import React from "react";
 import styles from "./_about.module.scss";
+import { useAppDispatch } from "../../store/hooks";
+import { setSelectedTab } from "../../store/root/rootSlice";
 
 /**
  * Contains a short personal bio
  */
 export default function About(): React.ReactElement {
+  const dispatch = useAppDispatch();
+  // reference to section element
+  const ref = React.useRef<HTMLElement>(null);
+
+  // when you scroll to this section the tab needs to change
+  // only should run when component first renders
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      // get the first element, which is our section
+      const entry = entries.at(0);
+      // if the element is on the screen, change tab
+      entry?.isIntersecting && dispatch(setSelectedTab("About"));
+    });
+    ref.current !== null && observer.observe(ref.current);
+  });
+
   return (
-    <section className={styles.container} id="About">
+    <section id="About" ref={ref} className={styles.container}>
       <div className={styles.imageContainer}>
         <img src="grad-b&w-min.jpg" alt="Luke Runyon graduation" />
         <img src="wedding-b&w-min.jpg" alt="Luke Runyon wedding" />

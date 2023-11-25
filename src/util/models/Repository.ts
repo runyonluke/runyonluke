@@ -4,7 +4,7 @@ export interface Repository {
   owner: {
     login: string;
     avatar_url: string;
-    url: string;
+    html_url: string;
   };
   description: string;
   url: string;
@@ -20,7 +20,7 @@ export const EMPTY_REPOSITORY: Repository = {
   owner: {
     login: "",
     avatar_url: "",
-    url: "",
+    html_url: "",
   },
   description: "",
   url: "",

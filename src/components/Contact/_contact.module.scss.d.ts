@@ -1,3 +1,4 @@
+export declare const container: string;
 export declare const fontLarge: string;
 export declare const fontMedium: string;
 export declare const fontSmall: string;
