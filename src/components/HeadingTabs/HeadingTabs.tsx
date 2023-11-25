@@ -7,16 +7,23 @@ import * as Tabs from "@radix-ui/react-tabs";
 /* redux */
 import { RootState } from "../../store/store";
 import { HEADING_TABS } from "../../util/constants/HEADING_TAB";
-import { useAppSelector } from "../../store/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { setSelectedTab } from "../../store/root/rootSlice";
 
 /**
  * Represents where the user is scrolled to, indicated by a tab
  */
 export default function HeadingTabs(): React.ReactElement {
+  const dispatch = useAppDispatch();
   //indicates which section of the landing page the user is scrolled to
   const selectedTab = useAppSelector(
     (state: RootState) => state.root.selectedTab
   );
+
+  const tabChange = (value: string) => {
+    dispatch(setSelectedTab(value));
+    window.location.replace(`/#${value}`);
+  };
 
   const [scroll, setScroll] = React.useState<number>(0);
 
@@ -35,6 +42,7 @@ export default function HeadingTabs(): React.ReactElement {
       <Tabs.Root
         className={scroll > window.innerHeight ? styles.rootFixed : styles.root}
         value={selectedTab}
+        onValueChange={tabChange}
       >
         <Tabs.List>
           {Object.values(HEADING_TABS).map((heading) => (

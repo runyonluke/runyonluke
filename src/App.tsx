@@ -7,6 +7,8 @@ import About from "./components/About/About";
 import Repository from "./components/Repository/Repository";
 import LinkedIn from "./components/LinkedIn/LinkedIn";
 import Landing from "./components/Landing/Landing";
+import Experience from "./components/Experience/Experience";
+import Contact from "./components/Contact/Contact";
 
 /* Redux */
 import { useAppDispatch } from "./store/hooks";
@@ -26,6 +28,8 @@ function App(): React.ReactElement {
       <About />
       <LinkedIn />
       <Repository />
+      <Experience />
+      <Contact />
     </div>
   );
 }
