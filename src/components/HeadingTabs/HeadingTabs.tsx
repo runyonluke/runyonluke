@@ -31,23 +31,27 @@ export default function HeadingTabs(): React.ReactElement {
   });
 
   return (
-    <Tabs.Root
-      className={scroll > window.innerHeight ? styles.rootFixed : styles.root}
-      value={selectedTab}
-    >
-      <Tabs.List>
-        {Object.values(HEADING_TABS).map((heading) => (
-          <Tabs.Trigger
-            className={
-              heading === selectedTab ? styles.selectedTrigger : styles.trigger
-            }
-            value={heading}
-            key={heading}
-          >
-            {heading}
-          </Tabs.Trigger>
-        ))}
-      </Tabs.List>
-    </Tabs.Root>
+    <nav>
+      <Tabs.Root
+        className={scroll > window.innerHeight ? styles.rootFixed : styles.root}
+        value={selectedTab}
+      >
+        <Tabs.List>
+          {Object.values(HEADING_TABS).map((heading) => (
+            <Tabs.Trigger
+              className={
+                heading === selectedTab
+                  ? styles.selectedTrigger
+                  : styles.trigger
+              }
+              value={heading}
+              key={heading}
+            >
+              {heading}
+            </Tabs.Trigger>
+          ))}
+        </Tabs.List>
+      </Tabs.Root>
+    </nav>
   );
 }

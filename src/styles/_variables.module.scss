@@ -22,7 +22,16 @@ $beta-text-one: #6a3722;
 $beta-accent-one: #b85a1a;
 $alpha-accent-two-transparent: rgba(184, 90, 26, 0.5);
 
-// Beta is the secondary and dark-mode color scheme of the site
+// Delta is the white color scheme of the site
+$delta-background-one: white;
+
+$delta-text-one: #272727;
+$delta-text-two: #747474;
+
+$delta-accent-one: #0b65c3;
+$delta-accent-one-transparent: rgba(11, 99, 193, 0.7);
+
+// Omega is the and dark-mode color scheme of the site
 $omega-background-one: #1f2836;
 
 $omega-text-one: #fefff1;
@@ -36,6 +45,7 @@ $box-shadow-one: rgba(0, 0, 0, 0.25);
 /** Structural **/
 $gutters: 50px;
 $maxWidth: 100%;
+$borderRadius: 4px;
 
 /** Font sizes **/
 $font-xsmall: 14px;

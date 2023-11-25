@@ -5,8 +5,11 @@
   flex-direction: column;
   justify-content: center;
 
-  height: 100%;
   width: 100%;
+  height: 90vh;
+
+  max-width: $maxWidth;
+  padding: $gutters;
 
   font-size: $font-medium;
   color: $alpha-text-two;

@@ -10,19 +10,17 @@
   color: $alpha-text-two;
 }
 
-.landing {
-  width: 100%;
-  height: 90vh;
-
-  width: 100%;
-  max-width: $maxWidth;
-  padding: $gutters;
-}
-
 a {
   color: inherit;
   text-decoration: unset;
 }
 a:hover {
   text-decoration: underline;
+}
+
+/* airbnb breakpoint */
+@media screen and (min-width: 744px) {
+}
+/* airbnb breakpoint */
+@media screen and (min-width: 1440px) {
 }

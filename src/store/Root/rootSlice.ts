@@ -1,17 +1,24 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { HEADING_TABS as HEADING_TAB } from "../../util/constants/HEADING_TAB";
 import { EMPTY_REPOSITORY, Repository } from "../../util/models/Repository";
+import { INITIAL_LINKEDIN, LinkedIn } from "../../util/models/LinkedIn";
 
-interface rootState {
+interface RootState {
   // tab label that represents where on the landing page the user is scrolled to
   selectedTab: HEADING_TAB;
+  // information about the GitHub that this website is found on
   repository: Repository;
+  // personal linked in information
+  // to get from LinkedIn API, you have to add website as a company and register the app,
+  // which I am not interesting in right now
+  linkedIn: LinkedIn;
 }
 
-const initialState = {
+const initialState: RootState = {
   selectedTab: HEADING_TAB.About,
   repository: EMPTY_REPOSITORY,
-} as rootState;
+  linkedIn: INITIAL_LINKEDIN,
+};
 
 // get the information on the repository
 // TODO: temporarily the wrong

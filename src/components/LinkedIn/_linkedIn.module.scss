@@ -1,7 +1,97 @@
-@import "../../styles/app.module";
+@import "../../styles/variables.module";
 
 .container {
-  display: relative;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 50px;
 
-  background-color: $alpha-background-two;
+  color: $delta-text-two;
+  background-color: $delta-background-one;
+  box-shadow: 0 0 8px 0 $box-shadow-one;
+
+  width: 100%;
+  border: $borderRadius;
+
+  span {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+}
+
+.heroContainer {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar {
+  top: $gutters;
+  left: $gutters;
+  position: absolute;
+  border: 5px solid $delta-background-one;
+  border-radius: 100%;
+
+  width: 125px;
+  height: 125px;
+}
+
+.body {
+  padding: 6rem $gutters 3rem;
+}
+
+span.name {
+  color: $delta-text-one;
+  font-size: $font-medium;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+span.description {
+  color: $delta-text-one;
+}
+
+span.muted {
+  font-size: $font-xsmall;
+}
+
+a.button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: $delta-accent-one;
+  color: $delta-background-one;
+  border: 0;
+  border-radius: $borderRadius;
+  margin-top: 1rem;
+  width: fit-content;
+  text-decoration: none;
+  transition: 0.75s;
+
+  .imgContainer {
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  span {
+    line-height: unset;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+a.button:hover {
+  // add animation to button
+  box-shadow: inset 300px 0 0 0 $delta-accent-one-transparent;
+  text-decoration: none;
+  background-color: $delta-accent-one-transparent;
 }
