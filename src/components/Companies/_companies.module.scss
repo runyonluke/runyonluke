@@ -1,6 +1,9 @@
 @import "../../styles/variables.module";
 
 .container {
-  width: $maxWidth;
-  padding: $gutters;
+  width: 100%;
+
+  span {
+    display: inline-block;
+  }
 }

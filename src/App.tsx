@@ -27,8 +27,8 @@ function App(): React.ReactElement {
       <HeadingTabs />
       <About />
       <LinkedIn />
-      <Repository />
       <Experience />
+      <Repository />
       <Contact />
     </div>
   );

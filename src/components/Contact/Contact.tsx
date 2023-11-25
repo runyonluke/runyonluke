@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./_contact.module.scss";
+
+/* Redux */
 import { useAppDispatch } from "../../store/hooks";
 import { setSelectedTab } from "../../store/root/rootSlice";
 
@@ -25,7 +27,13 @@ export default function Contact(): React.ReactElement {
 
   return (
     <section id="Contact" ref={ref} className={styles.container}>
-      Contact
+      <h1>Contact</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo unde
+        dolore inventore, odit maxime consequuntur aut commodi distinctio, culpa
+        porro, maiores dicta velit? Rerum explicabo illo mollitia temporibus
+        eos?
+      </p>
     </section>
   );
 }

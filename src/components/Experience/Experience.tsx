@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./_experience.module.scss";
+
+/* Redux */
 import { useAppDispatch } from "../../store/hooks";
 import { setSelectedTab } from "../../store/root/rootSlice";
+
+/* Components */
+import Companies from "../Companies/Companies";
+import Skills from "../Skills/Skills";
 
 /**
  * The area describing work experience and frameworks that I have used
@@ -24,8 +30,18 @@ export default function Experience(): React.ReactElement {
   });
 
   return (
-    <section id="Experience" ref={ref} className={styles.container}>
-      Experience
+    <section id="Experience" ref={ref}>
+      <div className={styles.container}>
+        <h1>Experience</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsa
+          sunt maxime cumque quod commodi quibusdam, eos sit odio culpa ut
+          laborum perferendis hic sint accusantium, autem minus praesentium
+          atque vel repudiandae porro eius facere.
+        </p>
+      </div>
+      <Companies />
+      <Skills />
     </section>
   );
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./_about.module.scss";
+
+/* Redux */
 import { useAppDispatch } from "../../store/hooks";
 import { setSelectedTab } from "../../store/root/rootSlice";
 

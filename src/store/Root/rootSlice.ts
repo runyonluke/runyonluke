@@ -1,7 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
+/* util */
 import { HEADING_TABS as HEADING_TAB } from "../../util/constants/HEADING_TAB";
-import { EMPTY_REPOSITORY, Repository } from "../../util/models/Repository";
-import { INITIAL_LINKEDIN, LinkedIn } from "../../util/models/LinkedIn";
+import { INITIAL_LINKEDIN } from "../../util/constants/INITIAL_LINKEDIN";
+import { EMPTY_REPOSITORY } from "../../util/constants/EMPTY_REPOSITORY";
+import { LinkedIn } from "../../util/models/LinkedIn";
+import { Repository } from "../../util/models/Repository";
 
 interface RootState {
   // tab label that represents where on the landing page the user is scrolled to
