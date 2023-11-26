@@ -7,6 +7,7 @@ $alpha-background-two: white;
 
 $alpha-text-one: #1f2836;
 $alpha-text-two: #33677c;
+$alpha-text-three: #618b9c;
 
 $alpha-accent-one: #e3811e;
 $alpha-accent-one-transparent: rgba(227, 129, 30, 0.5);
@@ -39,8 +40,9 @@ $omega-text-one: #fefff1;
 $omega-accent-one: #33677c;
 $omega-accent-two-transparent: rgba(51, 103, 124, 0.5);
 
-// box shadow
+// util
 $box-shadow-one: rgba(0, 0, 0, 0.25);
+$controls-dark: rgba(0, 0, 0, 0.5);
 
 /** Structural **/
 $gutters: 50px;

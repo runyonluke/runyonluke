@@ -1,7 +1,15 @@
+export declare const body: string;
+export declare const card: string;
 export declare const container: string;
+export declare const controls: string;
 export declare const fontLarge: string;
 export declare const fontMedium: string;
 export declare const fontSmall: string;
 export declare const fontXlarge: string;
 export declare const fontXsmall: string;
 export declare const fontXxlarge: string;
+export declare const headingHeight: string;
+export declare const icon: string;
+export declare const img: string;
+export declare const imgContainer: string;
+export declare const selectedCard: string;

@@ -1,5 +1,109 @@
 @import "../../styles/variables.module";
 
+$headingHeight: 80px;
+$containerPadding: 100px;
+
+// we calculate the offset to ensure the non-selected skills are at the right height
+:export {
+  headingHeight: calc($headingHeight + $containerPadding);
+}
+
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  position: relative;
+
   width: 100%;
+  padding: 100px 0;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    height: $headingHeight;
+    margin: 0;
+  }
+}
+
+.card {
+  position: absolute;
+
+  width: 70%;
+  background-color: $alpha-background-two;
+  border-radius: $borderRadius;
+  box-shadow: 0 0 8px 0 $box-shadow-one;
+
+  .body {
+    padding: 1.5rem;
+  }
+
+  span {
+    font-size: $font-xsmall;
+    color: $alpha-text-three;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: $font-medium;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.selectedCard {
+  position: unset;
+
+  @extend .card;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: $borderRadius $borderRadius 0 0;
+}
+
+.controls {
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90%;
+  // we want controls height to be 60% of cards, not heading
+  height: calc($headingHeight + 60%);
+}
+
+.icon {
+  $dimension: 25px;
+
+  background-color: $controls-dark;
+  color: $omega-text-one;
+  height: $dimension;
+  width: $dimension;
+  border-radius: $borderRadius;
+  border: 0;
+  box-shadow: 0 0 8px 0 $box-shadow-one;
+  padding: 0;
+  cursor: pointer;
+
+  svg {
+    width: $dimension;
+    height: $dimension;
+  }
+}
+
+.icon:hover {
+  background-color: $alpha-accent-two;
 }
