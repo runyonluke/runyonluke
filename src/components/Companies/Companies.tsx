@@ -15,17 +15,16 @@ export default function Companies(): React.ReactElement {
   >(undefined);
 
   return (
-    <section className={styles.container}>
-      <AccordionRoot
-        value={selectedCompany}
-        onValueChange={(value) => setSelectedCompany(value)}
-        type="single"
-        collapsible
-      >
-        {COMPANIES.map((company) => (
-          <Company key={company.companyName} company={company} />
-        ))}
-      </AccordionRoot>
-    </section>
+    <AccordionRoot
+      value={selectedCompany}
+      onValueChange={(value) => setSelectedCompany(value)}
+      type="single"
+      collapsible
+      className={styles.accordion}
+    >
+      {COMPANIES.map((company) => (
+        <Company key={company.companyName} company={company} />
+      ))}
+    </AccordionRoot>
   );
 }

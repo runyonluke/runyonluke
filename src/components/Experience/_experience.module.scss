@@ -1,6 +1,10 @@
 @import "../../styles/variables.module";
 
 .container {
+  margin-bottom: 50px;
+}
+
+.textContainer {
   width: $maxWidth;
   padding: $gutters;
 }

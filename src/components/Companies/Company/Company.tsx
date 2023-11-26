@@ -18,19 +18,19 @@ export default function Companies({ company }: Props): React.ReactElement {
 
   return (
     <Accordion.Item value={companyName}>
-      <Accordion.Header>
-        <Accordion.Trigger>
-          <div>
+      <Accordion.Header className={styles.header}>
+        <Accordion.Trigger className={styles.trigger}>
+          <div className={styles.labels}>
             <span>{dates}</span>
             <span>{companyName}</span>
             <span>{jobTitle}</span>
           </div>
-          <ChevronDownIcon className="AccordionChevron" aria-hidden />
+          <ChevronDownIcon aria-hidden />
         </Accordion.Trigger>
       </Accordion.Header>
-      <Accordion.Content>
+      <Accordion.Content className={styles.content}>
         {bullets.map((bullet) => (
-          <p>bullet</p>
+          <p key={bullet.substring(0, 15)}>{bullet}</p>
         ))}
       </Accordion.Content>
     </Accordion.Item>

@@ -30,8 +30,8 @@ export default function Experience(): React.ReactElement {
   });
 
   return (
-    <section id="Experience" ref={ref}>
-      <div className={styles.container}>
+    <section id="Experience" ref={ref} className={styles.container}>
+      <div className={styles.textContainer}>
         <h1>Experience</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsa

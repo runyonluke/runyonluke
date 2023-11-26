@@ -1,9 +1,12 @@
 @import "../../styles/variables.module";
 
-.container {
+.accordion {
   width: 100%;
+  border: 2px solid $alpha-accent-two;
+  color: $alpha-text-one;
+  border-radius: $borderRadius;
+}
 
-  span {
-    display: inline-block;
-  }
+.accordion > div:first-child button {
+  border: none;
 }

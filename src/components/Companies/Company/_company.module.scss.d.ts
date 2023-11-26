@@ -1,7 +1,12 @@
-export declare const accordion: string;
+export declare const close: string;
+export declare const content: string;
+export declare const expand: string;
 export declare const fontLarge: string;
 export declare const fontMedium: string;
 export declare const fontSmall: string;
 export declare const fontXlarge: string;
 export declare const fontXsmall: string;
 export declare const fontXxlarge: string;
+export declare const header: string;
+export declare const labels: string;
+export declare const trigger: string;
