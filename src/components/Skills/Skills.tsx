@@ -12,14 +12,9 @@ export default function Skills(): React.ReactElement {
 
   // the non selected skills need to be relative positioning so they don't affect the selected
   const getStyles = (index: number) => {
-    if (index < selectedSkill)
-      return {
-        top: styles.headingHeight,
-        left: `calc(-65% * ${selectedSkill - index})`,
-      };
     return {
       top: styles.headingHeight,
-      right: `calc(65% * ${selectedSkill - index})`,
+      right: `calc(15% + (80% * ${selectedSkill - index}))`,
     };
   };
 
@@ -43,9 +38,7 @@ export default function Skills(): React.ReactElement {
       {SKILLS.map((skill, index) => (
         <article
           key={skill?.name}
-          className={
-            index === selectedSkill ? styles.selectedCard : styles.card
-          }
+          className={styles.card}
           style={getStyles(index)}
         >
           <div className={styles.imgContainer}>

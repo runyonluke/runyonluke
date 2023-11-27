@@ -1,7 +1,8 @@
 @import "../../styles/variables.module";
 
 $headingHeight: 80px;
-$containerPadding: 100px;
+$containerPadding: 50px;
+$cardHeight: 210px;
 
 // we calculate the offset to ensure the non-selected skills are at the right height
 :export {
@@ -17,23 +18,25 @@ $containerPadding: 100px;
   position: relative;
 
   width: 100%;
-  padding: 100px 0;
+  padding: $containerPadding 0;
 
   h2 {
     display: flex;
     align-items: center;
     height: $headingHeight;
     margin: 0;
+    margin-bottom: $cardHeight;
   }
 }
 
 .card {
   position: absolute;
-
+  transition: right 0.5s ease-in-out;
   width: 70%;
   background-color: $alpha-background-two;
   border-radius: $borderRadius;
   box-shadow: 0 0 8px 0 $box-shadow-one;
+  height: $cardHeight;
 
   .body {
     padding: 1.5rem;
@@ -88,7 +91,7 @@ $containerPadding: 100px;
 .icon {
   $dimension: 25px;
 
-  background-color: $controls-dark;
+  background-color: $controls-dark-one;
   color: $omega-text-one;
   height: $dimension;
   width: $dimension;
@@ -106,4 +109,10 @@ $containerPadding: 100px;
 
 .icon:hover {
   background-color: $alpha-accent-two;
+}
+
+.icon:disabled {
+  background-color: $controls-dark-two;
+  color: $controls-dark-three;
+  cursor: unset;
 }
