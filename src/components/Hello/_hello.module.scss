@@ -12,7 +12,8 @@
   padding: $gutters;
 
   font-size: $font-medium;
-  color: $alpha-text-two;
+  color: $beta-text-two;
+  background-color: $beta-background-one;
 }
 
 .focused {
@@ -20,7 +21,7 @@
   font-weight: bold;
   line-height: 0.95;
   margin: 0.4rem 0 1.2rem;
-  color: $alpha-text-one;
+  color: $beta-text-one;
 }
 
 .bouncy {

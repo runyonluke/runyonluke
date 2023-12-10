@@ -4,6 +4,7 @@ import styles from "./_contact.module.scss";
 /* Redux */
 import { useAppDispatch } from "../../store/hooks";
 import { setSelectedTab } from "../../store/root/rootSlice";
+import ContactForm from "./ContactForm/ContactForm";
 
 /**
  * The area describing how to get in touch with me
@@ -27,13 +28,14 @@ export default function Contact(): React.ReactElement {
 
   return (
     <section id="Contact" ref={ref} className={styles.container}>
-      <h1>Contact</h1>
+      <h1>Contact Me</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo unde
         dolore inventore, odit maxime consequuntur aut commodi distinctio, culpa
         porro, maiores dicta velit? Rerum explicabo illo mollitia temporibus
         eos?
       </p>
+      <ContactForm />
     </section>
   );
 }
