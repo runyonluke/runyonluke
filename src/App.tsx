@@ -6,13 +6,15 @@ import HeadingTabs from "./components/HeadingTabs/HeadingTabs";
 import About from "./components/About/About";
 import Repository from "./components/Repository/Repository";
 import LinkedIn from "./components/LinkedIn/LinkedIn";
-import Landing from "./components/Landing/Landing";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 
 /* Redux */
 import { useAppDispatch } from "./store/hooks";
 import { getRepositoryData } from "./store/root/rootSlice";
+import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
+import Hello from "./components/Hello/Hello";
+import MoreAboutMe from "./components/MoreAboutMe/MoreAboutMe";
 
 function App(): React.ReactElement {
   const dispatch = useAppDispatch();
@@ -23,7 +25,9 @@ function App(): React.ReactElement {
 
   return (
     <div className={styles.app}>
-      <Landing />
+      <HamburgerMenu />
+      <Hello />
+      <MoreAboutMe />
       <HeadingTabs />
       <About />
       <LinkedIn />

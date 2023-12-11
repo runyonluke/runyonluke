@@ -24,10 +24,11 @@ code {
 
   --gutters: 50px;
   --maxWidth: 100%;
+}
 
-  /* airbnb breakpoint */
-  @media screen and (min-width: 744px) {
-    --gutters: auto;
+@media screen and (min-width: 744px) {
+  :root {
+    --gutters: 100px;
     --maxWidth: 1200px;
   }
 }

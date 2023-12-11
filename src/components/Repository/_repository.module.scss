@@ -1,12 +1,14 @@
 @import "../../styles/variables.module";
 
 .container {
+  max-width: var(--maxWidth);
+  padding: 50px var(--gutters);
+
   position: relative;
 
   display: block;
   text-decoration: none;
 
-  padding: 2rem;
   background-color: $omega-background-one;
   color: $omega-text-one;
   background-image: url("../../../public/github-mark.svg");

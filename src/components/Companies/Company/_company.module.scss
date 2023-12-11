@@ -5,6 +5,9 @@
 }
 
 .trigger {
+  max-width: var(--maxWidth);
+  padding: 1.5rem var(--gutters) 1.75rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,14 +15,14 @@
   background-color: unset;
   border: none;
   border-top: 2px solid $omega-accent-two;
-  padding: 1rem 1rem 1.25rem;
+  // padding: 1rem 1rem 1.25rem;
   width: 100%;
   cursor: pointer;
+  color: $omega-text-two;
 }
 
 .labels {
   text-align: left;
-  color: $omega-text-two;
 
   span {
     display: block;

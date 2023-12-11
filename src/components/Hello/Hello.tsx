@@ -9,7 +9,7 @@ export default function Hello(): React.ReactElement {
   const hello = ["H", "e", "l", "l", "o", "!"];
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.bouncy}>
         {hello.map((letter, index) => (
           <span
@@ -24,6 +24,6 @@ export default function Hello(): React.ReactElement {
       <span className={styles.focused}>I'm Luke Runyon</span>
       <span>Front-end</span>
       <span>Web Developer</span>
-    </div>
+    </section>
   );
 }

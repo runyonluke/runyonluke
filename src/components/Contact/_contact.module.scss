@@ -1,8 +1,8 @@
 @import "../../styles/variables.module";
 
 .container {
-  margin: 100px 0;
+  max-width: var(--maxWidth);
+  padding: 50px var(--gutters);
 
-  width: $maxWidth;
-  padding: $gutters;
+  margin: 100px 0;
 }

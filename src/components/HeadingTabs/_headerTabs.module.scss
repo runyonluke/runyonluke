@@ -54,3 +54,10 @@ $height: 65px;
 
   border-bottom: 5px solid $alpha-accent-two;
 }
+
+@media screen and (min-width: 744px) {
+  .root {
+    max-width: var(--maxWidth);
+    padding: 0 var(--gutters);
+  }
+}

@@ -1,6 +1,10 @@
 @import "../../styles/variables.module";
 
 .container {
+  max-width: var(--maxWidth);
+  padding: 2rem var(--gutters);
+  height: 10vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,8 +13,6 @@
 
   background-color: $omega-background-one;
   color: $omega-text-two;
-  height: 10vh;
-  padding: 2rem;
 }
 
 .icon {

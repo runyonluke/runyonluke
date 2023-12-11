@@ -5,6 +5,6 @@
 }
 
 .textContainer {
-  width: $maxWidth;
-  padding: 150px $gutters;
+  max-width: var(--maxWidth);
+  padding: 150px var(--gutters);
 }

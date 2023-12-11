@@ -1,8 +1,10 @@
 @import "../../styles/variables.module";
 
+$imgOffset: 10px;
+
 .container {
-  width: $maxWidth;
-  padding: $gutters;
+  max-width: var(--maxWidth);
+  padding: 100px var(--gutters);
 }
 
 .container > :first-child {
@@ -18,7 +20,7 @@
   img {
     border-radius: $borderRadius;
     box-shadow:
-      -10px 10px $alpha-accent-two-transparent,
+      -$imgOffset 10px $alpha-accent-two-transparent,
       0 4px 4px 0 $box-shadow-one;
   }
 
@@ -36,7 +38,7 @@
   // overlapping the images
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: $imgOffset;
 
   width: 50%;
   height: auto;

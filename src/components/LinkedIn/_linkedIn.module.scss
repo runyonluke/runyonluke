@@ -28,8 +28,8 @@
 }
 
 .avatar {
-  top: $gutters;
-  left: $gutters;
+  top: var(--gutters);
+  left: var(--gutters);
   position: absolute;
   border: 5px solid $omega-background-one;
   border-radius: 100%;
@@ -39,7 +39,8 @@
 }
 
 .body {
-  padding: 6rem $gutters 3rem;
+  padding: 6rem var(--gutters) 3rem;
+  max-width: var(--maxWidth);
 }
 
 span.name {

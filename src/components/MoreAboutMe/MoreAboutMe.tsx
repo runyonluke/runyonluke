@@ -7,10 +7,10 @@ import { ArrowDownIcon } from "@radix-ui/react-icons";
  */
 export default function MoreAboutMe(): React.ReactElement {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <ArrowDownIcon className={styles.icon} />
       <span>See more about me</span>
       <ArrowDownIcon className={styles.icon} />
-    </div>
+    </section>
   );
 }
