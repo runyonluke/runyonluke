@@ -6,11 +6,9 @@
   display: block;
   text-decoration: none;
 
-  box-shadow: 0 0 8px 0 $box-shadow-one;
-
   padding: 2rem;
-  background-color: $alpha-background-two;
-
+  background-color: $omega-background-one;
+  color: $omega-text-one;
   background-image: url("../../../public/github-mark.svg");
   background-repeat: no-repeat;
   background-position-x: 135%;

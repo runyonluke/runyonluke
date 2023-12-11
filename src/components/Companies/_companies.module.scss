@@ -2,9 +2,8 @@
 
 .accordion {
   width: 100%;
-  border: 2px solid $alpha-accent-two;
-  color: $alpha-text-one;
-  border-radius: $borderRadius;
+  background-color: $omega-background-one;
+  color: $omega-text-one;
 }
 
 .accordion > div:first-child button {

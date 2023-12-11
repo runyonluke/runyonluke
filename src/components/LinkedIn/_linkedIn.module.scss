@@ -4,12 +4,10 @@
   position: relative;
   margin-top: 25px;
 
-  color: $delta-text-two;
-  background-color: $delta-background-one;
-  box-shadow: 0 0 8px 0 $box-shadow-one;
+  color: $omega-text-two;
+  background-color: $omega-background-one;
 
   width: 100%;
-  border: $borderRadius;
 
   span {
     display: inline-block;
@@ -33,7 +31,7 @@
   top: $gutters;
   left: $gutters;
   position: absolute;
-  border: 5px solid $delta-background-one;
+  border: 5px solid $omega-background-one;
   border-radius: 100%;
 
   width: 125px;
@@ -45,14 +43,14 @@
 }
 
 span.name {
-  color: $delta-text-one;
+  color: $omega-text-one;
   font-size: $font-medium;
   font-weight: bold;
   margin-bottom: 0.25rem;
 }
 
 span.description {
-  color: $delta-text-one;
+  color: $omega-text-one;
 }
 
 span.muted {
@@ -66,8 +64,8 @@ a.button {
   line-height: 0;
   cursor: pointer;
   font-weight: bold;
-  background-color: $delta-accent-one;
-  color: $delta-background-one;
+  background-color: $omega-accent-one;
+  color: $omega-background-one;
   border: 0;
   border-radius: $borderRadius;
   margin-top: 1rem;
@@ -90,7 +88,7 @@ a.button {
 
 a.button:hover {
   // add animation to button
-  box-shadow: inset 300px 0 0 0 $delta-accent-one-transparent;
+  box-shadow: inset 60vw 0 0 0 $omega-accent-one-transparent;
   text-decoration: none;
-  background-color: $delta-accent-one-transparent;
+  background-color: $omega-accent-one-transparent;
 }

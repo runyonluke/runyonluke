@@ -4,34 +4,25 @@
 /** Alpha is the primary and default color scheme of the site, used for text sections **/
 $alpha-background-one: #fefff1;
 $alpha-background-two: white;
-$alpha-text-one: #1f2836;
-$alpha-text-two: #33677c;
+$alpha-text-one: #6a3722;
+$alpha-text-two: #b85a1a;
 $alpha-text-three: #618b9c;
 $alpha-accent-one: #e3811e;
 $alpha-accent-one-transparent: rgba(227, 129, 30, 0.5);
 $alpha-accent-two: #b85a1a;
 $alpha-accent-two-transparent: rgba(184, 90, 26, 0.5);
 $alpha-accent-three: #6a3722;
-
-/** Beta is the secondary color scheme of the site, used for accent **/
-$beta-background-one: #ecf8f8;
-$beta-text-one: #1f2836;
-$beta-text-two: #33677c;
-$beta-text-three: #618b9c;
-$beta-accent-one: #b85a1a;
-
-/** Delta is the white color scheme of the site, used for social media **/
-$delta-background-one: white;
-$delta-text-one: #272727;
-$delta-text-two: #747474;
-$delta-accent-one: #3b3c3c;
-$delta-accent-one-transparent: rgba(11, 99, 193, 0.7);
+$alpha-input-border: #b4b4b4;
 
 /** Omega is the and dark-mode color scheme of the site **/
 $omega-background-one: #1f2836;
 $omega-text-one: #fefff1;
-$omega-accent-one: #33677c;
+$omega-text-two: #e0e0df;
+$omega-accent-one: #70b5fa;
+$omega-accent-one-transparent: rgba(112, 181, 250, 0.5);
+$omega-accent-two: #33677c;
 $omega-accent-two-transparent: rgba(51, 103, 124, 0.5);
+$omega-accent-three: #aad4ff;
 
 // util
 $box-shadow-one: rgba(0, 0, 0, 0.25);

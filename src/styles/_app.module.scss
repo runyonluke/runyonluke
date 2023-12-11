@@ -6,6 +6,19 @@
   height: 100%;
   background-color: $alpha-background-one;
   color: $alpha-text-two;
+
+  h1,
+  h2 {
+    color: $alpha-text-one;
+  }
+}
+
+.app::after {
+  display: block;
+  content: " ";
+  height: 100px;
+  width: 100%;
+  background-color: $omega-background-one;
 }
 
 a {

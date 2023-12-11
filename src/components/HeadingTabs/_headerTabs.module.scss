@@ -12,7 +12,8 @@ $height: 65px;
   padding-left: 1rem;
 
   z-index: 10;
-  box-shadow: 0 3px 8px 0 $box-shadow-one;
+  box-shadow: 0 3px 6px 0 $box-shadow-one;
+  border-top: 2px solid $alpha-accent-two;
   background-color: $alpha-background-one;
 
   // avoid putting margin on last tab

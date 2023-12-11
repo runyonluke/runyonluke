@@ -19,6 +19,7 @@ $cardHeight: 210px;
 
   width: 100%;
   padding: $containerPadding 0;
+  color: $alpha-text-one;
 
   h2 {
     display: flex;
@@ -44,7 +45,6 @@ $cardHeight: 210px;
 
   span {
     font-size: $font-xsmall;
-    color: $alpha-text-three;
     font-weight: bold;
     text-transform: uppercase;
   }

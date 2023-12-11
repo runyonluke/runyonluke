@@ -39,6 +39,14 @@ export default function Experience(): React.ReactElement {
           laborum perferendis hic sint accusantium, autem minus praesentium
           atque vel repudiandae porro eius facere.
         </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          impedit assumenda, modi, ullam quam repellat reprehenderit doloribus
+          numquam, quas ab molestias officia? Delectus reiciendis earum nesciunt
+          expedita sed quis nisi, voluptate nostrum quaerat, sit praesentium
+          provident minus dolorem pariatur commodi nam repudiandae ut quidem
+          cumque incidunt ab, mollitia fuga omnis.
+        </p>
       </div>
       <Companies />
       <Skills />

@@ -11,14 +11,15 @@
 
   background-color: unset;
   border: none;
-  border-top: 2px solid $alpha-accent-two;
-  padding: 0.5rem 1rem;
+  border-top: 2px solid $omega-accent-two;
+  padding: 1rem 1rem 1.25rem;
   width: 100%;
   cursor: pointer;
 }
 
 .labels {
   text-align: left;
+  color: $omega-text-two;
 
   span {
     display: block;
@@ -26,6 +27,7 @@
 }
 
 .labels > span:first-child {
+  color: $omega-text-one;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -40,10 +42,11 @@
 }
 
 .content {
-  border-top: 2px solid $alpha-accent-two;
+  border-top: 2px solid $omega-accent-two;
   padding: 0.5rem 1rem;
   transition: all 1s;
   overflow: hidden;
+  color: $omega-text-two;
 }
 
 .content > p::before {

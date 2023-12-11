@@ -1,0 +1,36 @@
+@import "../../../styles/variables.module";
+
+.form {
+  width: 100%;
+  margin: 20px 0;
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  input {
+    border-radius: $borderRadius;
+    border: 1px solid $alpha-input-border;
+    padding: 8px;
+  }
+
+  input::placeholder {
+    color: $alpha-input-border;
+  }
+}
+
+.submit {
+  margin-top: 10px;
+  color: white;
+  background-color: $alpha-accent-two;
+  cursor: pointer;
+  transition: 1.25s;
+}
+
+.submit:hover {
+  // add animation to button
+  // I try not to use vw but % doesn't work here
+  box-shadow: inset 100vw 0 0 0 $alpha-accent-one-transparent;
+  background-color: $alpha-accent-one-transparent;
+}
