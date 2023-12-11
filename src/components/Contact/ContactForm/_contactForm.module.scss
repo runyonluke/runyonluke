@@ -23,7 +23,7 @@
 .submit {
   margin-top: 10px;
   color: white;
-  background-color: $alpha-accent-two;
+  background-color: $alpha-accent-three;
   cursor: pointer;
   transition: 1.25s;
 }
@@ -31,6 +31,6 @@
 .submit:hover {
   // add animation to button
   // I try not to use vw but % doesn't work here
-  box-shadow: inset 100vw 0 0 0 $alpha-accent-one-transparent;
-  background-color: $alpha-accent-one-transparent;
+  box-shadow: inset 100vw 0 0 0 $alpha-accent-three-transparent;
+  background-color: $alpha-accent-three-transparent;
 }
