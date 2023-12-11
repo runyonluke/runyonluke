@@ -21,4 +21,13 @@ code {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+  --gutters: 50px;
+  --maxWidth: 100%;
+
+  /* airbnb breakpoint */
+  @media screen and (min-width: 744px) {
+    --gutters: auto;
+    --maxWidth: 1200px;
+  }
 }

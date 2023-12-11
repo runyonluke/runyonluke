@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 
-  font-size: $font-medium;
+  font-size: 5vw;
 
   background-color: $omega-background-one;
   color: $omega-text-two;
@@ -15,8 +15,8 @@
 
 .icon {
   margin: 1rem;
-  width: $font-large;
-  height: $font-large;
+  width: 5vw;
+  height: 5vw;
   // causes the icons to slowly move up and down
   animation: mover 1s infinite alternate;
   -webkit-animation: mover 1s infinite alternate;
