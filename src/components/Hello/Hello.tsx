@@ -10,20 +10,22 @@ export default function Hello(): React.ReactElement {
 
   return (
     <section className={styles.container}>
-      <div className={styles.bouncy}>
-        {hello.map((letter, index) => (
-          <span
-            // allows for bounce animation
-            style={{ "--i": index } as React.CSSProperties}
-            key={letter + index}
-          >
-            {letter}
-          </span>
-        ))}
+      <div className={styles.content}>
+        <div className={styles.bouncy}>
+          {hello.map((letter, index) => (
+            <span
+              // allows for bounce animation
+              style={{ "--i": index } as React.CSSProperties}
+              key={letter + index}
+            >
+              {letter}
+            </span>
+          ))}
+        </div>
+        <span className={styles.focused}>I'm Luke Runyon</span>
+        <span>Front-end</span>
+        <span>Web Developer</span>
       </div>
-      <span className={styles.focused}>I'm Luke Runyon</span>
-      <span>Front-end</span>
-      <span>Web Developer</span>
     </section>
   );
 }

@@ -3,11 +3,18 @@
 $imgOffset: 10px;
 
 .container {
-  max-width: var(--maxWidth);
+  display: flex;
+  justify-content: center;
+
   padding: 100px var(--gutters);
 }
 
-.container > :first-child {
+.content {
+  width: 100%;
+  max-width: var(--maxWidth);
+}
+
+.content > :first-child {
   margin-top: 25px;
 }
 

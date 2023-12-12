@@ -1,18 +1,23 @@
 @import "../../styles/variables.module";
 
 .container {
-  max-width: var(--maxWidth);
   padding: 2rem var(--gutters);
   height: 10vh;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 
   font-size: 5vw;
-
   background-color: $omega-background-one;
   color: $omega-text-two;
+}
+
+.content {
+  max-width: var(--maxWidth);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {

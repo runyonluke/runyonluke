@@ -38,9 +38,15 @@ export default function HeadingTabs(): React.ReactElement {
   });
 
   return (
-    <nav>
+    <nav
+      className={
+        scroll > window.innerHeight + parseInt(styles.navHeight)
+          ? styles.navFixed
+          : styles.nav
+      }
+    >
       <Tabs.Root
-        className={scroll > window.innerHeight ? styles.rootFixed : styles.root}
+        className={styles.root}
         value={selectedTab}
         onValueChange={tabChange}
       >
