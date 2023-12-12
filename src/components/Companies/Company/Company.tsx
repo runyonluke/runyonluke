@@ -29,9 +29,11 @@ export default function Companies({ company }: Props): React.ReactElement {
         </Accordion.Trigger>
       </Accordion.Header>
       <Accordion.Content className={styles.content}>
-        {bullets.map((bullet) => (
-          <p key={bullet.substring(0, 15)}>{bullet}</p>
-        ))}
+        <div className={styles.bullets}>
+          {bullets.map((bullet) => (
+            <p key={bullet.substring(0, 15)}>{bullet}</p>
+          ))}
+        </div>
       </Accordion.Content>
     </Accordion.Item>
   );

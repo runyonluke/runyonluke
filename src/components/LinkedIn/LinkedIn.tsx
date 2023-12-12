@@ -27,22 +27,26 @@ export default function LinkedIn(): React.ReactElement {
         src={avatarImageUrl}
         alt="Luke Runyon's profile"
       />
-      <div className={styles.body}>
-        <span className={styles.name}>{name}</span>
-        <span className={styles.description}>{description}</span>
-        <span className={styles.muted}>
-          {companies.map(
-            (company, index) =>
-              company + " " + (index !== companies.length - 1 ? "•" : "")
-          )}
-        </span>
-        <span className={styles.muted}>{location}</span>
-        <a className={styles.button} href={url}>
-          <i className={styles.imgContainer}>
-            <img src="linkedin.svg" alt="LinkedIn logo" />
-          </i>
-          <span>Connect on LInkedIn</span>
-        </a>
+      <div>
+        <div className={styles.body}>
+          <div className={styles.content}>
+            <span className={styles.name}>{name}</span>
+            <span className={styles.description}>{description}</span>
+            <span className={styles.muted}>
+              {companies.map(
+                (company, index) =>
+                  company + " " + (index !== companies.length - 1 ? "•" : "")
+              )}
+            </span>
+            <span className={styles.muted}>{location}</span>
+            <a className={styles.button} href={url}>
+              <i className={styles.imgContainer}>
+                <img src="linkedin.svg" alt="LinkedIn logo" />
+              </i>
+              <span>Connect on LInkedIn</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

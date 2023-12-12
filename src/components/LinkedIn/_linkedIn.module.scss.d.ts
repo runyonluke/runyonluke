@@ -2,6 +2,7 @@ export declare const avatar: string;
 export declare const body: string;
 export declare const button: string;
 export declare const container: string;
+export declare const content: string;
 export declare const description: string;
 export declare const fontLarge: string;
 export declare const fontMedium: string;

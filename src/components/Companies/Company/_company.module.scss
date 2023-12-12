@@ -1,12 +1,20 @@
 @import "../../../styles/variables.module";
 
 .header {
+  padding: 0 var(--gutters);
+
+  display: flex;
+  justify-content: center;
+
   margin: 0;
+  border-top: 2px solid $omega-accent-two;
 }
 
 .trigger {
   max-width: var(--maxWidth);
-  padding: 1.5rem var(--gutters) 1.75rem;
+  width: 100%;
+
+  padding: 1.5rem 0 1.75rem;
 
   display: flex;
   align-items: center;
@@ -14,7 +22,6 @@
 
   background-color: unset;
   border: none;
-  border-top: 2px solid $omega-accent-two;
   // padding: 1rem 1rem 1.25rem;
   width: 100%;
   cursor: pointer;
@@ -44,19 +51,34 @@
   font-size: $font-small;
 }
 
+// TODO: fix sliding text inside dropdown on close
+// caused by the display changing from flex to none
+
 .content {
+  padding: 0.5rem var(--gutters);
+  justify-content: center;
+
   border-top: 2px solid $omega-accent-two;
-  padding: 0.5rem 1rem;
   transition: all 1s;
   overflow: hidden;
   color: $omega-text-two;
+
+  p {
+    animation: fadeIn 3s;
+  }
 }
 
-.content > p::before {
+.bullets {
+  max-width: var(--maxWidth);
+  width: 100%;
+}
+
+.bullets > p::before {
   content: "- ";
 }
 
 .content[data-state="open"] {
+  display: flex;
   animation: expand 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
 
@@ -89,5 +111,23 @@
   }
   to {
     height: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

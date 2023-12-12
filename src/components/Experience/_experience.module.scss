@@ -4,7 +4,14 @@
   margin-bottom: 50px;
 }
 
+.content {
+  padding: 150px var(--gutters);
+
+  display: flex;
+  justify-content: center;
+}
+
 .textContainer {
   max-width: var(--maxWidth);
-  padding: 150px var(--gutters);
+  width: 100%;
 }

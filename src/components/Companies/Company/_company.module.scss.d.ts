@@ -1,6 +1,9 @@
+export declare const bullets: string;
 export declare const close: string;
 export declare const content: string;
 export declare const expand: string;
+export declare const fadeIn: string;
+export declare const fadeOut: string;
 export declare const fontLarge: string;
 export declare const fontMedium: string;
 export declare const fontSmall: string;

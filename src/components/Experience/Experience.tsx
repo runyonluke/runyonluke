@@ -31,22 +31,24 @@ export default function Experience(): React.ReactElement {
 
   return (
     <section id="Experience" ref={ref} className={styles.container}>
-      <div className={styles.textContainer}>
-        <h1>Experience</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsa
-          sunt maxime cumque quod commodi quibusdam, eos sit odio culpa ut
-          laborum perferendis hic sint accusantium, autem minus praesentium
-          atque vel repudiandae porro eius facere.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          impedit assumenda, modi, ullam quam repellat reprehenderit doloribus
-          numquam, quas ab molestias officia? Delectus reiciendis earum nesciunt
-          expedita sed quis nisi, voluptate nostrum quaerat, sit praesentium
-          provident minus dolorem pariatur commodi nam repudiandae ut quidem
-          cumque incidunt ab, mollitia fuga omnis.
-        </p>
+      <div className={styles.content}>
+        <div className={styles.textContainer}>
+          <h1>Experience</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            ipsa sunt maxime cumque quod commodi quibusdam, eos sit odio culpa
+            ut laborum perferendis hic sint accusantium, autem minus praesentium
+            atque vel repudiandae porro eius facere.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            impedit assumenda, modi, ullam quam repellat reprehenderit doloribus
+            numquam, quas ab molestias officia? Delectus reiciendis earum
+            nesciunt expedita sed quis nisi, voluptate nostrum quaerat, sit
+            praesentium provident minus dolorem pariatur commodi nam repudiandae
+            ut quidem cumque incidunt ab, mollitia fuga omnis.
+          </p>
+        </div>
       </div>
       <Companies />
       <Skills />
