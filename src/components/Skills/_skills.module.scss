@@ -116,3 +116,15 @@ $cardHeight: 210px;
   color: $controls-dark-three;
   cursor: unset;
 }
+
+@media screen and (min-width: 744px) {
+  .card {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 25%;
+  }
+}

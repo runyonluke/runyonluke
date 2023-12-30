@@ -8,13 +8,27 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
  */
 export default function Skills(): React.ReactElement {
   // only one skill gets the "stage"
-  const [selectedSkill, setSelectedSkill] = React.useState<number>(1);
+  const [selectedSkill, setSelectedSkill] = React.useState<number>(0);
+
+  const MOBILE_TO_TABLET = 744;
+  const TABLET_TO_MOBILE = 1440;
 
   // the non selected skills need to be relative positioning so they don't affect the selected
   const getStyles = (index: number) => {
+    if (window.innerWidth < MOBILE_TO_TABLET) {
+      return {
+        top: styles.headingHeight,
+        right: `calc(15% + (80% * ${selectedSkill - index}))`,
+      };
+    } else if (window.innerWidth < TABLET_TO_MOBILE) {
+      return {
+        top: styles.headingHeight,
+        right: `calc(52.5% + (40% * ${selectedSkill - index}))`,
+      };
+    }
     return {
       top: styles.headingHeight,
-      right: `calc(15% + (80% * ${selectedSkill - index}))`,
+      right: `calc(66% + (28.5% * ${selectedSkill - index}))`,
     };
   };
 
@@ -64,7 +78,13 @@ export default function Skills(): React.ReactElement {
           className={styles.icon}
           type="button"
           title="Next"
-          disabled={selectedSkill === SKILLS_LENGTH - 1}
+          disabled={
+            window.innerWidth < TABLET_TO_MOBILE
+              ? window.innerWidth < MOBILE_TO_TABLET
+                ? selectedSkill === SKILLS_LENGTH - 1
+                : selectedSkill === SKILLS_LENGTH - 2
+              : selectedSkill === SKILLS_LENGTH - 3
+          }
           onClick={next}
         >
           <ChevronRightIcon />
