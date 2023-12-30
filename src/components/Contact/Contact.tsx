@@ -28,14 +28,16 @@ export default function Contact(): React.ReactElement {
 
   return (
     <section id="Contact" ref={ref} className={styles.container}>
-      <h1>Contact Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo unde
-        dolore inventore, odit maxime consequuntur aut commodi distinctio, culpa
-        porro, maiores dicta velit? Rerum explicabo illo mollitia temporibus
-        eos?
-      </p>
-      <ContactForm />
+      <div className={styles.content}>
+        <h1>Contact Me</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo unde
+          dolore inventore, odit maxime consequuntur aut commodi distinctio,
+          culpa porro, maiores dicta velit? Rerum explicabo illo mollitia
+          temporibus eos?
+        </p>
+        <ContactForm />
+      </div>
     </section>
   );
 }

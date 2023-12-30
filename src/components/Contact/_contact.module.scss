@@ -1,8 +1,17 @@
 @import "../../styles/variables.module";
 
 .container {
-  max-width: var(--maxWidth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
   padding: 50px var(--gutters);
 
   margin: 100px 0;
+}
+
+.content {
+  width: 100%;
+  max-width: var(--maxWidth);
 }

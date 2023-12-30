@@ -50,3 +50,10 @@
     transform: translateY(-5px);
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .container,
+  .focused {
+    font-size: 350%;
+  }
+}

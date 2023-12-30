@@ -5,17 +5,28 @@ export default function ContactForm(): React.ReactElement {
   return (
     <form
       className={styles.form}
+      //TODO: hook up email service
       //action
     >
-      <input type="text" name="Name" placeholder="Your name*" required />
-      <br />
-      <br />
-      <input type="email" name="Email" placeholder="Email*" required />
-      <br />
-      <br />
-      <input type="email" name="Message" placeholder="Message*" required />
-      <br />
-      <br />
+      <div className={styles.inputContainer}>
+        <input
+          type="text"
+          name="Name"
+          className={styles.shortInput}
+          placeholder="Your name*"
+          required
+        />
+        <input
+          type="email"
+          name="Email"
+          className={styles.shortInput}
+          placeholder="Email*"
+          required
+        />
+      </div>
+
+      <input type="text" name="Message" placeholder="Message*" required />
+
       <input type="submit" className={styles.submit} value="Submit" />
     </form>
   );
