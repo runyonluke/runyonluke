@@ -54,3 +54,12 @@
   position: absolute;
   overflow: hidden;
 }
+
+/* airbnb breakpoint */
+@media screen and (min-width: 744px) {
+  .container {
+    background-position-x: 100%;
+    background-position-y: 35%;
+    background-size: 35%;
+  }
+}
