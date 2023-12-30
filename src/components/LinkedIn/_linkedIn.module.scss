@@ -1,6 +1,7 @@
 @import "../../styles/variables.module";
 
-$heroHeight: 100px;
+$heroHeight: 15vh;
+$avatarDimension: 125px;
 
 .container {
   position: relative;
@@ -32,7 +33,7 @@ $heroHeight: 100px;
 .avatar {
   // calculate to keep it even with the gutters
   left: var(--gutters);
-  top: calc(#{$heroHeight} / 2);
+  top: calc(#{$heroHeight} - #{$avatarDimension} / 2);
   position: absolute;
   border: 5px solid $omega-background-one;
   border-radius: 100%;
@@ -109,8 +110,7 @@ a.button:hover {
   background-color: $omega-accent-one-transparent;
 }
 
-/* airbnb breakpoint */
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 1440px) {
   .avatar {
     left: calc((100% - var(--maxWidth)) / 2);
   }
