@@ -29,8 +29,8 @@ export default function About(): React.ReactElement {
     <section id="About" ref={ref} className={styles.container}>
       <div className={styles.content}>
         <div className={styles.imageContainer}>
-          <img src="grad-b&w-min.jpg" alt="Luke Runyon graduation" />
-          <img src="wedding-b&w-min.jpg" alt="Luke Runyon wedding" />
+          <img src="grad-color-min.jpg" alt="Luke Runyon graduation" />
+          <img src="wedding-color-min.jpg" alt="Luke Runyon wedding" />
         </div>
         <h1>About me</h1>
         <p>
