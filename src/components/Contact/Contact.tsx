@@ -3,7 +3,7 @@ import styles from "./_contact.module.scss";
 
 /* Redux */
 import { useAppDispatch } from "../../store/hooks";
-import { setSelectedTab } from "../../store/root/rootSlice";
+import { setSelectedTab } from "../../store/RENAMEME/rootSlice";
 import ContactForm from "./ContactForm/ContactForm";
 
 /**

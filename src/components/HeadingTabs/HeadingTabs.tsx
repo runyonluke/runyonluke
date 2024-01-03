@@ -8,7 +8,7 @@ import * as Tabs from "@radix-ui/react-tabs";
 import { RootState } from "../../store/store";
 import { HEADING_TABS } from "../../util/constants/HEADING_TAB";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { setSelectedTab } from "../../store/root/rootSlice";
+import { setSelectedTab } from "../../store/RENAMEME/rootSlice";
 
 /**
  * Represents where the user is scrolled to, indicated by a tab
@@ -38,13 +38,7 @@ export default function HeadingTabs(): React.ReactElement {
   });
 
   return (
-    <nav
-      className={
-        scroll > window.innerHeight + parseInt(styles.navHeight)
-          ? styles.navFixed
-          : styles.nav
-      }
-    >
+    <nav className={scroll > window.innerHeight ? styles.navFixed : styles.nav}>
       <Tabs.Root
         className={styles.root}
         value={selectedTab}

@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import rootReducer from "./root/rootSlice";
+import rootReducer from "./RENAMEME/rootSlice";
 
 export const store = configureStore({
   reducer: { root: rootReducer },

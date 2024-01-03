@@ -3,7 +3,7 @@ import styles from "./_experience.module.scss";
 
 /* Redux */
 import { useAppDispatch } from "../../store/hooks";
-import { setSelectedTab } from "../../store/root/rootSlice";
+import { setSelectedTab } from "../../store/RENAMEME/rootSlice";
 
 /* Components */
 import Companies from "../Companies/Companies";
