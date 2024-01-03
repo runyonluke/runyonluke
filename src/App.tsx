@@ -11,7 +11,7 @@ import Contact from "./components/Contact/Contact";
 
 /* Redux */
 import { useAppDispatch } from "./store/hooks";
-import { getRepositoryData } from "./store/RENAMEME/rootSlice";
+import { getRepositoryData } from "./store/root/rootSlice";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
 import Hello from "./components/Hello/Hello";
 import MoreAboutMe from "./components/MoreAboutMe/MoreAboutMe";
