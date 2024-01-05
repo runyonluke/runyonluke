@@ -50,3 +50,23 @@ $imgOffset: 10px;
   width: 50%;
   height: auto;
 }
+
+//TODO: make the first-child center properly
+@media screen and (min-width: 744px) {
+  .imageContainer {
+    justify-content: center;
+    height: 450px;
+  }
+
+  .imageContainer > img:first-child {
+    position: absolute;
+    width: 450px;
+    left: 35%;
+  }
+
+  .imageContainer > img:last-child {
+    width: 300px;
+    left: unset;
+    right: 50%;
+  }
+}
