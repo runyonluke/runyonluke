@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./_vectorGraphic1.module.scss";
 
 /**
- * The products and languages I know well
+ * An animated graphic that plays on repeat
  */
 export default function VectorGraphic1(): React.ReactElement {
   return (

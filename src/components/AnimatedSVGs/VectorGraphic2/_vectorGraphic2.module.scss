@@ -1,0 +1,17 @@
+@import "../../../styles/keyframes.module";
+
+.container {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  width: 350px;
+  height: 350px;
+}
+
+:global(#vectorGraphic2) g {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  opacity: 1;
+  animation: draw 10s infinite;
+  animation-delay: calc(3s + var(--order) * 100ms);
+}

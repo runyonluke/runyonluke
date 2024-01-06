@@ -1,0 +1,35 @@
+.container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+:global(#vectorGraphic3) g {
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  opacity: 1;
+  animation: draw 10s infinite;
+  animation-delay: calc(6s + var(--order) * 100ms);
+}
+
+@keyframes draw {
+  // start - not visible
+  0% {
+    stroke-dashoffset: 1600;
+  }
+  // fade in
+  10% {
+    stroke-dashoffset: 0;
+  }
+
+  //fade out
+  20% {
+    stroke-dashoffset: -1600;
+  }
+
+  //end - not visible
+  100% {
+    stroke-dashoffset: -1600;
+  }
+}

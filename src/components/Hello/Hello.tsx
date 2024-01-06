@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./_hello.module.scss";
 import VectorGraphic1 from "../AnimatedSVGs/VectorGraphic1/VectorGraphic1";
+import VectorGraphic2 from "../AnimatedSVGs/VectorGraphic2/VectorGraphic2";
+import VectorGraphic3 from "../AnimatedSVGs/VectorGraphic3/VectorGraphic3";
 
 /**
  * The landing page of the website that contains the site's greeting
@@ -28,6 +30,8 @@ export default function Hello(): React.ReactElement {
         <span>Web Developer</span>
       </div>
       <VectorGraphic1 />
+      <VectorGraphic2 />
+      <VectorGraphic3 />
     </section>
   );
 }
