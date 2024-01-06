@@ -37,3 +37,14 @@ $stoke: 1600;
     stroke-dashoffset: -$stoke;
   }
 }
+
+@media screen and (min-width: 744px) {
+  .container {
+    bottom: -10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    bottom: -50%;
+  }
+}

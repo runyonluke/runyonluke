@@ -37,3 +37,26 @@ $stoke: 600;
     stroke-dashoffset: -$stoke;
   }
 }
+
+@media screen and (min-width: 744px) {
+  .container {
+    height: 140%;
+    right: -20%;
+    top: -20%;
+  }
+  :global(#vectorGraphic2) g {
+    stroke-dasharray: $stoke;
+    stroke-dashoffset: $stoke;
+    opacity: 1;
+    animation: draw 10s infinite;
+    animation-delay: calc(3s + var(--order) * 100ms);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 100%;
+    right: -20%;
+    top: 0;
+  }
+}
