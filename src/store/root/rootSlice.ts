@@ -29,7 +29,6 @@ const initialState: RootState = {
 };
 
 // get the information on the repository
-// TODO: temporarily the wrong
 export const getRepositoryData = createAsyncThunk(
   "getRepositoryData",
   async () => {

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./_hello.module.scss";
+import VectorGraphic1 from "../AnimatedSVGs/VectorGraphic1/VectorGraphic1";
 
 /**
  * The landing page of the website that contains the site's greeting
@@ -26,6 +27,7 @@ export default function Hello(): React.ReactElement {
         <span>Front-end</span>
         <span>Web Developer</span>
       </div>
+      <VectorGraphic1 />
     </section>
   );
 }
