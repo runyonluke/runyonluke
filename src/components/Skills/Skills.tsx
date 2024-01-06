@@ -50,19 +50,23 @@ export default function Skills(): React.ReactElement {
       <h2>Skills</h2>
 
       {SKILLS.map((skill, index) => (
-        <article
+        <a
           key={skill?.name}
+          href={skill.url}
+          target="_blank"
           className={styles.card}
           style={getStyles(index)}
         >
-          <div className={styles.imgContainer}>
-            <img className={styles.img} src={skill?.imageUrl} aria-hidden />
-          </div>
-          <div className={styles.body}>
-            <h3>{skill?.name}</h3>
-            <span>{skill?.category}</span>
-          </div>
-        </article>
+          <article>
+            <div className={styles.imgContainer}>
+              <img className={styles.img} src={skill?.imageUrl} aria-hidden />
+            </div>
+            <div className={styles.body}>
+              <h3>{skill?.name}</h3>
+              <span>{skill?.category}</span>
+            </div>
+          </article>
+        </a>
       ))}
       <div className={styles.controls}>
         <button

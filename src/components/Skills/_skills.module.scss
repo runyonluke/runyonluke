@@ -3,6 +3,7 @@
 $headingHeight: 80px;
 $containerPadding: 150px;
 $cardHeight: 210px;
+$transitionTime: 0.2s;
 
 // we calculate the offset to ensure the non-selected skills are at the right height
 :export {
@@ -34,10 +35,16 @@ $cardHeight: 210px;
   position: absolute;
   transition: right 0.5s ease-in-out;
   width: 70%;
-  background-color: $alpha-background-two;
+  background-color: $alpha-background-one;
   border-radius: $borderRadius;
   box-shadow: 0 0 8px 0 $box-shadow-one;
   height: $cardHeight;
+  transition:
+    height $transitionTime,
+    background-color $transitionTime,
+    margin $transitionTime;
+
+  z-index: 2;
 
   .body {
     padding: 1.5rem;
@@ -54,6 +61,14 @@ $cardHeight: 210px;
     margin-top: 0;
     margin-bottom: 1rem;
   }
+}
+
+.card:hover {
+  text-decoration: none;
+  background-color: $alpha-background-one-hover;
+  // to add the effect of the card expanding
+  margin: -5px 0;
+  height: calc(#{$cardHeight} + 10px);
 }
 
 .selectedCard {
@@ -74,6 +89,11 @@ $cardHeight: 210px;
   object-fit: cover;
 
   border-radius: $borderRadius $borderRadius 0 0;
+  transition: opacity $transitionTime;
+}
+
+.card:hover .img {
+  opacity: 0.9;
 }
 
 .controls {
@@ -100,6 +120,7 @@ $cardHeight: 210px;
   box-shadow: 0 0 8px 0 $box-shadow-one;
   padding: 0;
   cursor: pointer;
+  z-index: 3;
 
   svg {
     width: $dimension;

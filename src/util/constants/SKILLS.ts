@@ -11,7 +11,7 @@ export const SKILLS: Skill[] = [
     name: "Figma",
     imageUrl: "LSU-Engineering.jpg",
     url: "https://www.figma.com/",
-    category: "Design",
+    category: "Design & Prototyping Software",
   },
   {
     name: "Drupal",
