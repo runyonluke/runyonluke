@@ -34,7 +34,7 @@ export const getRepositoryData = createAsyncThunk(
   "getRepositoryData",
   async () => {
     const response = await fetch(
-      `https://api.github.com/repos/runyonluke/javascript-algorithms`
+      `https://api.github.com/repos/runyonluke/runyonluke`
     );
     return await response.json();
   }
