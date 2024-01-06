@@ -8,6 +8,11 @@
 
   margin: 0;
   border-top: 2px solid $omega-accent-two;
+  transition: background-color 0.2s;
+}
+
+.header:hover {
+  background-color: $omega-background-one-hover;
 }
 
 .trigger {

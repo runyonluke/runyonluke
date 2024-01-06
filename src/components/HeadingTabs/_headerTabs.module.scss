@@ -62,6 +62,9 @@ $height: 65px;
   margin-right: 0.75rem;
   border-bottom: 5px solid transparent;
   cursor: pointer;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s;
 }
 
 .trigger:hover {
