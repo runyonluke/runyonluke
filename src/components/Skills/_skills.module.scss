@@ -2,7 +2,8 @@
 
 $headingHeight: 80px;
 $containerPadding: 150px;
-$cardHeight: 210px;
+$cardHeightMobile: 210px;
+$cardHeightDesktop: 310px;
 $transitionTime: 0.2s;
 
 // we calculate the offset to ensure the non-selected skills are at the right height
@@ -27,7 +28,7 @@ $transitionTime: 0.2s;
     align-items: center;
     height: $headingHeight;
     margin: 0;
-    margin-bottom: $cardHeight;
+    margin-bottom: $cardHeightMobile;
   }
 }
 
@@ -38,11 +39,12 @@ $transitionTime: 0.2s;
   background-color: $alpha-background-one;
   border-radius: $borderRadius;
   box-shadow: 0 0 8px 0 $box-shadow-one;
-  height: $cardHeight;
+  height: $cardHeightMobile;
   transition:
     height $transitionTime,
     background-color $transitionTime,
-    margin $transitionTime;
+    margin $transitionTime,
+    right 0.5s ease-in-out;
 
   z-index: 2;
 
@@ -68,7 +70,7 @@ $transitionTime: 0.2s;
   background-color: $alpha-background-one-hover;
   // to add the effect of the card expanding
   margin: -5px 0;
-  height: calc(#{$cardHeight} + 10px);
+  height: calc(#{$cardHeightMobile} + 12px);
 }
 
 .selectedCard {
@@ -139,8 +141,22 @@ $transitionTime: 0.2s;
 }
 
 @media screen and (min-width: 744px) {
+  .container h2 {
+    margin-bottom: $cardHeightDesktop;
+  }
+
   .card {
     width: 35%;
+    height: $cardHeightDesktop;
+  }
+
+  .card:hover {
+    height: calc(#{$cardHeightDesktop} + 12px);
+  }
+
+  .imgContainer,
+  .img {
+    height: 200px;
   }
 }
 
