@@ -10,3 +10,4 @@ export declare const github: string;
 export declare const headerContainer: string;
 export declare const profile: string;
 export declare const projectName: string;
+export declare const wiggle: string;
