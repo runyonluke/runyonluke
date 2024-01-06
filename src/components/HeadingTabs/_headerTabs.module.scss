@@ -61,6 +61,12 @@ $height: 65px;
   padding-bottom: 1rem;
   margin-right: 0.75rem;
   border-bottom: 5px solid transparent;
+  cursor: pointer;
+}
+
+.trigger:hover {
+  background-color: $alpha-background-one-hover;
+  opacity: 0.9;
 }
 
 .selectedTrigger {
