@@ -35,18 +35,16 @@ export default function Experience(): React.ReactElement {
         <div className={styles.textContainer}>
           <h1>Experience</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            ipsa sunt maxime cumque quod commodi quibusdam, eos sit odio culpa
-            ut laborum perferendis hic sint accusantium, autem minus praesentium
-            atque vel repudiandae porro eius facere.
+            I joined ARA in August of 2021 as a Technical Intern before my last
+            semester of school at LSU. I am now a full-time Staff Software
+            Engineer working on a variety of projects in the Defense industry.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            impedit assumenda, modi, ullam quam repellat reprehenderit doloribus
-            numquam, quas ab molestias officia? Delectus reiciendis earum
-            nesciunt expedita sed quis nisi, voluptate nostrum quaerat, sit
-            praesentium provident minus dolorem pariatur commodi nam repudiandae
-            ut quidem cumque incidunt ab, mollitia fuga omnis.
+            I have had the opportunity to be a supervisor, have had a hand in
+            marketing and recruiting, have trained new hires, and have been able
+            to get experience in a variety of important parts of industry. Much
+            of my technical experience involves front-end development. You can
+            see the specifics down in the skills section below!
           </p>
         </div>
       </div>

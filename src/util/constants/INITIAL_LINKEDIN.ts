@@ -5,7 +5,7 @@ export const INITIAL_LINKEDIN: LinkedIn = {
   description: "Software Engineer at Applied Research Associates",
   companies: ["ARA", "Louisiana State University"],
   location: "Shreveport, Louisiana, United States",
-  heroImageUrl: "LSU-engineering.jpg",
+  heroImageUrl: "ara.jpg",
   avatarImageUrl: "avatar.jpg",
   url: "https://www.linkedin.com/in/luke-runyon/",
 };

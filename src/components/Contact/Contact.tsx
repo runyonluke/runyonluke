@@ -40,10 +40,9 @@ export default function Contact(): React.ReactElement {
         <div className={styles.content}>
           <h1>Contact Me</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo
-            unde dolore inventore, odit maxime consequuntur aut commodi
-            distinctio, culpa porro, maiores dicta velit? Rerum explicabo illo
-            mollitia temporibus eos?
+            Like what you see? I would love to hear from you. I am always
+            interested in hearing about new opportunities. Send me a message and
+            I will reach out as soon as possible!
           </p>
           <ContactForm />
         </div>

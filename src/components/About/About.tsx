@@ -34,21 +34,17 @@ export default function About(): React.ReactElement {
         </div>
         <h1>About me</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-          voluptas laborum error libero praesentium doloremque omnis sed
-          blanditiis maxime? Quas molestiae accusamus voluptatibus libero
-          perspiciatis voluptate iusto magni corporis accusantium ullam,
-          incidunt aliquam sed odit commodi officia? Suscipit eum cupiditate,
-          ducimus sed, enim tempora officiis ea
+          I love the outdoors, my wife of almost a year, and technology! I am a
+          proud graduate of Louisiana State University and am employed at
+          Applied Research Associates. Most importantly, I love software!
         </p>
         <p>
-          quia pariatur totam mollitia consequatur nihil quo labore, amet hic
-          explicabo iusto laboriosam autem eius! Velit eum rem error, aliquid ex
-          sit veritatis, et voluptas laudantium magni iusto officia dolorum
-          accusamus distinctio fugiat! Qui eligendi molestiae quae aliquid
-          magni, laboriosam vero, veniam asperiores in saepe illo veritatis.
-          Impedit id nesciunt corporis, eligendi et corrupti alias repellat
-          illum vel maiores porro?
+          My journey to software engineering began right before university. My
+          father worked for a software company, though not as a programmer. My
+          mother graduated in chemical engineering. I decided I wanted to try
+          doing something similar to both of their careers, and chose Computer
+          Science with a concentration in Software Engineering. I had no idea if
+          I would enjoy it, but I did! The rest is history!
         </p>
       </div>
     </section>
