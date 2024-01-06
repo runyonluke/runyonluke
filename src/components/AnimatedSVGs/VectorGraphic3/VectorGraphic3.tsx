@@ -3,6 +3,7 @@ import styles from "./_vectorGraphic3.module.scss";
 
 /**
  * An animated graphic that plays on repeat
+ * TODO: working, but refactor to make it cleaner
  */
 export default function VectorGraphic3(): React.ReactElement {
   return (

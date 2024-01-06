@@ -1,13 +1,17 @@
+$stoke: 1600;
+
+// TODO: working, but refactor to make it cleaner
 .container {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 100%;
+  height: auto;
 }
 
 :global(#vectorGraphic3) g {
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600;
+  stroke-dasharray: $stoke;
+  stroke-dashoffset: $stoke;
   opacity: 1;
   animation: draw 10s infinite;
   animation-delay: calc(6s + var(--order) * 100ms);
@@ -16,20 +20,20 @@
 @keyframes draw {
   // start - not visible
   0% {
-    stroke-dashoffset: 1600;
+    stroke-dashoffset: $stoke;
   }
   // fade in
   10% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: $stoke;
   }
 
   //fade out
-  20% {
-    stroke-dashoffset: -1600;
+  40% {
+    stroke-dashoffset: -$stoke;
   }
 
   //end - not visible
   100% {
-    stroke-dashoffset: -1600;
+    stroke-dashoffset: -$stoke;
   }
 }

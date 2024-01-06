@@ -1,17 +1,39 @@
-@import "../../../styles/keyframes.module";
+$stoke: 600;
 
+// TODO: working, but refactor to make it cleaner
 .container {
   position: absolute;
-  top: 35%;
-  right: 0;
-  width: 350px;
-  height: 350px;
+  top: 0;
+  right: -20%;
+  width: auto;
+  height: 100%;
 }
 
 :global(#vectorGraphic2) g {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
+  stroke-dasharray: $stoke;
+  stroke-dashoffset: $stoke;
   opacity: 1;
   animation: draw 10s infinite;
-  animation-delay: calc(3s + var(--order) * 100ms);
+  animation-delay: calc(4s + var(--order) * 100ms);
+}
+
+@keyframes draw {
+  // start - not visible
+  0% {
+    stroke-dashoffset: $stoke;
+  }
+  // fade in
+  10% {
+    stroke-dashoffset: 0;
+  }
+
+  //fade out
+  20% {
+    stroke-dashoffset: -$stoke;
+  }
+
+  //end - not visible
+  100% {
+    stroke-dashoffset: -$stoke;
+  }
 }
