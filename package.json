@@ -1,6 +1,6 @@
 {
   "name": "runyonluke",
-  "version": "0.1.0",
+  "version": "2.0.2",
   "private": true,
   "dependencies": {
     "@aws-amplify/cli": "^12.10.0",
