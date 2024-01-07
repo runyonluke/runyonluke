@@ -1,11 +1,13 @@
 export interface Repository {
   name: string;
   full_name: string;
-  owner: {
-    login: string;
-    avatar_url: string;
-    html_url: string;
-  };
+  owner:
+    | {
+        login: string;
+        avatar_url: string;
+        html_url: string;
+      }
+    | undefined;
   description: string;
   url: string;
   watcher_count: number;

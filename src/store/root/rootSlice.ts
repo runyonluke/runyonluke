@@ -12,7 +12,7 @@ interface RootState {
   // tab label that represents where on the landing page the user is scrolled to
   selectedTab: HEADING_TAB;
   // information about the GitHub that this website is found on
-  repository: Repository;
+  repository?: Repository;
   // personal linked in information
   // to get from LinkedIn API, you have to add website as a company and register the app,
   // which I am not interesting in right now

@@ -8,6 +8,7 @@ export declare const fontXsmall: string;
 export declare const fontXxlarge: string;
 export declare const github: string;
 export declare const headerContainer: string;
+export declare const link: string;
 export declare const profile: string;
 export declare const projectName: string;
 export declare const wiggle: string;

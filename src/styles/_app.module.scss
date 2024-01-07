@@ -34,7 +34,10 @@ a:hover {
   :global(.hidden) {
     opacity: 0;
     filter: blur(4px);
-    transition: all 1s;
+    transition:
+      opacity 1s,
+      filter 1s,
+      transform 1s;
     transform: translateX(-100%);
   }
 
