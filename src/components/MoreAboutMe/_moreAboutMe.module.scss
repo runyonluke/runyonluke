@@ -12,6 +12,7 @@
   font-size: 5vw;
   background-color: $omega-background-one;
   color: $omega-text-two;
+  overflow: hidden;
 }
 
 .content {
@@ -48,6 +49,17 @@
   }
   100% {
     transform: translateY(-5px);
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .container {
+    font-size: 3vw;
+  }
+
+  .icon {
+    width: 3vw;
+    height: 3vw;
   }
 }
 

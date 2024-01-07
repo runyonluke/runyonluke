@@ -4,6 +4,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 
   > svg {
     position: absolute;
@@ -65,5 +66,8 @@
 }
 
 @media screen and (min-width: 744px) {
-  //TODO:
+  .container > svg:nth-child(3) {
+    right: 0;
+    bottom: -45%;
+  }
 }
