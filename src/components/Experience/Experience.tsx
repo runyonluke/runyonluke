@@ -8,6 +8,7 @@ import { setSelectedTab } from "../../store/root/rootSlice";
 /* Components */
 import Companies from "../Companies/Companies";
 import Skills from "../Skills/Skills";
+import Graphics from "./Graphics/Graphics";
 
 /**
  * The area describing work experience and frameworks that I have used
@@ -47,6 +48,7 @@ export default function Experience(): React.ReactElement {
             see the specifics down in the skills section below!
           </p>
         </div>
+        <Graphics />
       </div>
       <Companies />
       <Skills />

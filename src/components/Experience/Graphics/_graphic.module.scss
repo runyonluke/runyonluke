@@ -8,17 +8,28 @@
 
   > svg {
     position: absolute;
-    bottom: -50px;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    opacity: 0.9;
 
     // see comment at keyframes
     g {
       stroke-dasharray: 1000;
       stroke-dashoffset: 2520;
     }
+  }
+
+  > svg:first-child {
+    top: 0px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.9;
+  }
+
+  > svg:last-child {
+    bottom: 0;
+    left: 60%;
+    width: 150px;
+    height: 75px;
+    opacity: 0.9;
   }
 }
 
@@ -36,6 +47,11 @@
     -webkit-animation-delay: calc(var(--order) * 1s);
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
+  }
+
+  .container > svg:last-child g {
+    animation-duration: 25s;
+    -webkit-animation-duration: 25s;
   }
 
   // TODO: can't use calc in keyframes, have to use
@@ -60,10 +76,14 @@
 }
 
 @media screen and (min-width: 744px) {
-  .container > svg {
-    bottom: -75px;
-    right: 0;
+  .container > svg:first-child {
     width: 200px;
     height: 200px;
+    left: -60px;
+  }
+
+  .container > svg:last-child {
+    width: 250px;
+    height: 125px;
   }
 }
