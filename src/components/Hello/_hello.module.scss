@@ -2,7 +2,9 @@
 
 .container {
   padding: 50px var(--gutters);
+  // just in case there isn't browser support
   height: 90vh;
+  height: 90svh;
   width: 100%;
 
   display: flex;

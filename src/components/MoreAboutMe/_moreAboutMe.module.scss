@@ -2,7 +2,9 @@
 
 .container {
   padding: 2rem var(--gutters);
+  // just in case there isn't browser support
   height: 10vh;
+  height: 10svh;
 
   display: flex;
   justify-content: center;
