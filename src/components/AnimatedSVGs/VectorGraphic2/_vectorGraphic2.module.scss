@@ -1,67 +1,50 @@
-$stoke: 600;
-
-// TODO: working, but refactor to make it cleaner
 .container {
   position: absolute;
   top: 0;
   right: -20%;
   width: auto;
   height: 100%;
-}
 
-:global(#vectorGraphic2) g {
-  stroke-dasharray: $stoke;
-  stroke-dashoffset: $stoke;
-  opacity: 1;
-}
-
-@keyframes draw {
-  // start - not visible
-  0% {
-    stroke-dashoffset: $stoke;
-  }
-  // fade in
-  10% {
-    stroke-dashoffset: 0;
-  }
-
-  //fade out
-  20% {
-    stroke-dashoffset: -$stoke;
-  }
-
-  //end - not visible
-  100% {
-    stroke-dashoffset: -$stoke;
+  // see comment at keyframes
+  g {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 1680;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  :global(#vectorGraphic2) g {
-    animation: draw 10s infinite;
-    animation-delay: calc(4s + var(--order) * 100ms);
+  .container g {
+    animation-name: draw;
+    -webkit-animation-name: draw;
+    animation-duration: 12s;
+    -webkit-animation-duration: 12s;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-delay: calc(5s + var(--order) * 100ms);
+    -webkit-animation-delay: calc(5s + var(--order) * 100ms);
+  }
+
+  // TODO: can't use calc in keyframes, have to use
+  // magic number until I find a clean solution
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 555;
+    }
+    15%,
+    100% {
+      stroke-dasharray: 1125;
+    }
   }
 }
 
 @media screen and (min-width: 744px) {
   .container {
-    height: 140%;
-    right: -20%;
-    top: -20%;
-  }
-  :global(#vectorGraphic2) g {
-    stroke-dasharray: $stoke;
-    stroke-dashoffset: $stoke;
-    opacity: 1;
-    animation: draw 10s infinite;
-    animation-delay: calc(3s + var(--order) * 100ms);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    height: 100%;
-    right: -20%;
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 40%;
+    height: auto;
   }
 }

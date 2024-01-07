@@ -7,49 +7,47 @@ $stoke: 1600;
   bottom: 0;
   width: 100%;
   height: auto;
-}
 
-:global(#vectorGraphic3) g {
-  stroke-dasharray: $stoke;
-  stroke-dashoffset: $stoke;
-  opacity: 1;
-}
-
-@keyframes draw {
-  // start - not visible
-  0% {
-    stroke-dashoffset: $stoke;
-  }
-  // fade in
-  10% {
-    stroke-dashoffset: $stoke;
-  }
-
-  //fade out
-  40% {
-    stroke-dashoffset: -$stoke;
-  }
-
-  //end - not visible
-  100% {
-    stroke-dashoffset: -$stoke;
+  // see comment at keyframes
+  g {
+    stroke-dasharray: 1104;
+    stroke-dashoffset: 3360;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  :global(#vectorGraphic3) g {
-    animation: draw 10s infinite;
-    animation-delay: calc(6s + var(--order) * 100ms);
+  .container g {
+    animation-name: draw;
+    -webkit-animation-name: draw;
+    animation-duration: 12s;
+    -webkit-animation-duration: 12s;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-delay: calc(9s + var(--order) * 100ms);
+    -webkit-animation-delay: calc(9s + var(--order) * 100ms);
+  }
+
+  // TODO: can't use calc in keyframes, have to use
+  // magic number until I find a clean solution
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 1104;
+    }
+    15%,
+    100% {
+      stroke-dasharray: 2250;
+    }
   }
 }
 
 @media screen and (min-width: 744px) {
   .container {
-    bottom: -10%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    bottom: -50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: auto;
   }
 }

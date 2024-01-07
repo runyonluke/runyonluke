@@ -30,9 +30,8 @@ export default function Hello(): React.ReactElement {
         <span>Web Developer</span>
       </div>
       <VectorGraphic1 />
-      {/* testing an animation bug for apple devices */}
-      {/* <VectorGraphic2 />
-      <VectorGraphic3 /> */}
+      <VectorGraphic2 />
+      <VectorGraphic3 />
     </section>
   );
 }

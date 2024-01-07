@@ -4,27 +4,26 @@
   left: 0;
   width: 250px;
   height: 250px;
-}
 
-// see comment at keyframes
-:global(#vectorGraphic1) g {
-  stroke-dasharray: 555;
-  stroke-dashoffset: 1680;
+  // see comment at keyframes
+  g {
+    stroke-dasharray: 555;
+    stroke-dashoffset: 1680;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  :global(#vectorGraphic1) g {
-    animation: draw 10s infinite;
+  .container g {
     animation-name: draw;
     -webkit-animation-name: draw;
-    animation-duration: 10s;
-    -webkit-animation-duration: 10s;
+    animation-duration: 12s;
+    -webkit-animation-duration: 12s;
     animation-direction: normal;
     -webkit-animation-direction: normal;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
+    animation-delay: calc(1s + var(--order) * 100ms);
+    -webkit-animation-delay: calc(1s + var(--order) * 100ms);
   }
 
   // TODO: can't use calc in keyframes, have to use
@@ -33,7 +32,7 @@
     0% {
       stroke-dasharray: 555;
     }
-    20%,
+    15%,
     100% {
       stroke-dasharray: 1125;
     }
