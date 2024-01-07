@@ -20,7 +20,7 @@ export default function Companies(): React.ReactElement {
       onValueChange={(value) => setSelectedCompany(value)}
       type="single"
       collapsible
-      className={styles.accordion}
+      className={styles.accordion + " hidden"}
     >
       {COMPANIES.map((company) => (
         <Company key={company.companyName} company={company} />

@@ -12,7 +12,7 @@ export default function Repository(): React.ReactElement {
   );
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container + " hidden"}>
       <div className={styles.content}>
         <div className={styles.headerContainer}>
           <img

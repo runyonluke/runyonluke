@@ -46,7 +46,7 @@ export default function Skills(): React.ReactElement {
   const SKILLS_LENGTH = SKILLS.length;
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container + " hidden"}>
       <h2>Skills</h2>
 
       {SKILLS.map((skill, index) => (

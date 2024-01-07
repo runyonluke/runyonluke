@@ -29,9 +29,18 @@ a:hover {
   text-decoration: underline;
 }
 
-/* airbnb breakpoint */
-@media screen and (min-width: 744px) {
-}
-/* airbnb breakpoint */
-@media screen and (min-width: 1440px) {
+// controls the fade-in animations for content
+@media (prefers-reduced-motion: no-preference) {
+  :global(.hidden) {
+    opacity: 0;
+    filter: blur(4px);
+    transition: all 1s;
+    transform: translateX(-100%);
+  }
+
+  :global(.visible) {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }

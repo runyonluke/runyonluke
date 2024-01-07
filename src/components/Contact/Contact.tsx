@@ -35,7 +35,7 @@ export default function Contact(): React.ReactElement {
   });
 
   return (
-    <section id="Contact" ref={ref} className={styles.container}>
+    <section id="Contact" ref={ref} className={styles.container + " hidden"}>
       {!isContacted ? (
         <div className={styles.content}>
           <h1>Contact Me</h1>

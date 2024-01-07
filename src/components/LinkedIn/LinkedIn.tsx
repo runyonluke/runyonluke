@@ -18,7 +18,7 @@ export default function LinkedIn(): React.ReactElement {
   } = useAppSelector((state: RootState) => state.root.linkedIn);
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container + " hidden"}>
       <div className={styles.heroContainer}>
         <img className={styles.hero} src={heroImageUrl} aria-hidden />
       </div>

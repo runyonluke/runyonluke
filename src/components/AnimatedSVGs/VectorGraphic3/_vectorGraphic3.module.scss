@@ -13,8 +13,6 @@ $stoke: 1600;
   stroke-dasharray: $stoke;
   stroke-dashoffset: $stoke;
   opacity: 1;
-  animation: draw 10s infinite;
-  animation-delay: calc(6s + var(--order) * 100ms);
 }
 
 @keyframes draw {
@@ -35,6 +33,13 @@ $stoke: 1600;
   //end - not visible
   100% {
     stroke-dashoffset: -$stoke;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :global(#vectorGraphic3) g {
+    animation: draw 10s infinite;
+    animation-delay: calc(6s + var(--order) * 100ms);
   }
 }
 

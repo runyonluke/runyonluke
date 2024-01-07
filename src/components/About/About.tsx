@@ -26,7 +26,7 @@ export default function About(): React.ReactElement {
   });
 
   return (
-    <section id="About" ref={ref} className={styles.container}>
+    <section id="About" ref={ref} className={styles.container + " hidden"}>
       <div className={styles.content}>
         <div className={styles.imageContainer}>
           <img src="grad-color-min.jpg" alt="Luke Runyon graduation" />
