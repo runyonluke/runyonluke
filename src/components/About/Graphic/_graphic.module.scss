@@ -59,8 +59,11 @@
   }
 }
 
-//TODO:
 @media screen and (min-width: 744px) {
-}
-@media screen and (min-width: 1440px) {
+  .container > svg {
+    bottom: -75px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+  }
 }
