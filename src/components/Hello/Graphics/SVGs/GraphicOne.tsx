@@ -1,11 +1,9 @@
 import React from "react";
-import styles from "./_vectorGraphic1.module.scss";
 
 /**
  * An animated graphic that plays on repeat
- * TODO: working, but refactor to make it cleaner
  */
-export default function VectorGraphic1(): React.ReactElement {
+export default function GraphicOne(): React.ReactElement {
   return (
     <svg
       width="200"
@@ -13,7 +11,7 @@ export default function VectorGraphic1(): React.ReactElement {
       viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={styles.container}
+      style={{ "--delay": "1s" } as React.CSSProperties}
     >
       <g clipPath="url(#clip0_79_103)">
         <g style={{ "--order": 0 } as React.CSSProperties}>

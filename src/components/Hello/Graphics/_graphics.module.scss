@@ -1,0 +1,69 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  > svg {
+    position: absolute;
+
+    // see comment at keyframes
+    g {
+      stroke-dasharray: 833;
+      stroke-dashoffset: 2520;
+    }
+  }
+
+  > svg:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  > svg:nth-child(2) {
+    top: 0;
+    right: -20%;
+    width: auto;
+    height: 100%;
+  }
+
+  > svg:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .container > svg g {
+    animation-name: drawOne;
+    -webkit-animation-name: drawOne;
+    animation-duration: 12s;
+    -webkit-animation-duration: 12s;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-delay: calc(var(--delay) + var(--order) * 100ms);
+    -webkit-animation-delay: calc(var(--delay) + var(--order) * 100ms);
+  }
+
+  // TODO: can't use calc in keyframes, have to use
+  // magic number until I find a clean solution
+  @keyframes drawOne {
+    0% {
+      stroke-dasharray: 833;
+    }
+    15%,
+    100% {
+      stroke-dasharray: 1688;
+    }
+  }
+}
+
+@media screen and (min-width: 744px) {
+  //TODO:
+}
