@@ -1,2 +1,2 @@
 export declare const container: string;
-export declare const drawOne: string;
+export declare const draw: string;

@@ -24,8 +24,8 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .container > svg g {
-    animation-name: drawOne;
-    -webkit-animation-name: drawOne;
+    animation-name: draw;
+    -webkit-animation-name: draw;
     animation-duration: 30s;
     -webkit-animation-duration: 30s;
     animation-direction: normal;
@@ -40,7 +40,7 @@
 
   // TODO: can't use calc in keyframes, have to use
   // magic number until I find a clean solution
-  @keyframes drawOne {
+  @keyframes draw {
     0% {
       stroke-dasharray: 1000;
     }
