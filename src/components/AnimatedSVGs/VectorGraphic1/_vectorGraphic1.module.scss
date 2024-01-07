@@ -1,4 +1,5 @@
-$stoke: 600;
+// testing an animation bug for apple devices
+// $stoke: 600;
 
 // TODO: working, but refactor to make it cleaner
 .container {
@@ -10,36 +11,40 @@ $stoke: 600;
 }
 
 :global(#vectorGraphic1) g {
-  stroke-dasharray: $stoke;
-  stroke-dashoffset: $stoke;
-  opacity: 1;
-}
-
-@keyframes draw {
-  // start - not visible
-  0% {
-    stroke-dashoffset: $stoke;
-  }
-  // fade in
-  10% {
-    stroke-dashoffset: 0;
-  }
-
-  //fade out
-  20% {
-    stroke-dashoffset: -$stoke;
-  }
-
-  //end - not visible
-  100% {
-    stroke-dashoffset: -$stoke;
-  }
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   :global(#vectorGraphic1) g {
-    animation: draw 10s infinite;
-    animation-delay: calc(var(--order) * 100ms);
+    // animation: draw 10s infinite;
+    animation-name: draw;
+    -webkit-animation-name: draw;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+  }
+
+  @keyframes draw {
+    // start - not visible
+    0% {
+      stroke-dashoffset: 600;
+    }
+    // fade in
+    10% {
+      stroke-dashoffset: 0;
+    }
+
+    //fade out
+    20%,
+    100% {
+      stroke-dashoffset: -600;
+    }
   }
 }
 
