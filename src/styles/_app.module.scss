@@ -33,12 +33,20 @@ a:hover {
 @media (prefers-reduced-motion: no-preference) {
   :global(.hidden) {
     opacity: 0;
-    filter: blur(4px);
     transition:
       opacity 1s,
       filter 1s,
       transform 1s;
     transform: translateX(-100%);
+  }
+
+  :global(.hiddenStatic) {
+    opacity: 0;
+    filter: blur(2px);
+    transition:
+      opacity 1s,
+      filter 1s;
+    transition-delay: 0.75s;
   }
 
   :global(.visible) {

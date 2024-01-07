@@ -4,6 +4,7 @@ import styles from "./_about.module.scss";
 /* Redux */
 import { useAppDispatch } from "../../store/hooks";
 import { setSelectedTab } from "../../store/root/rootSlice";
+import Graphic from "./Graphic/Graphic";
 
 /**
  * Contains a short personal bio
@@ -26,8 +27,8 @@ export default function About(): React.ReactElement {
   });
 
   return (
-    <section id="About" ref={ref} className={styles.container + " hidden"}>
-      <div className={styles.content}>
+    <section id="About" ref={ref} className={styles.container}>
+      <div className={styles.content + " hidden"}>
         <div className={styles.imageContainer}>
           <img src="grad-color-min.jpg" alt="Luke Runyon graduation" />
           <img src="wedding-color-min.jpg" alt="Luke Runyon wedding" />
@@ -47,6 +48,7 @@ export default function About(): React.ReactElement {
           I would enjoy it, but I did! The rest is history!
         </p>
       </div>
+      <Graphic />
     </section>
   );
 }

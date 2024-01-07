@@ -6,7 +6,8 @@ $imgOffset: 10px;
   display: flex;
   justify-content: center;
 
-  padding: 100px var(--gutters);
+  padding: 100px var(--gutters) 100px;
+  position: relative;
 }
 
 .content {

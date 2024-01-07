@@ -32,7 +32,7 @@ function App(): React.ReactElement {
     // I chose to do vanilla javascript to avoid having to use
     // @scroll-timeline, which at the time of this code is not widely supported
     // and to avoid having to use a library
-    const hiddenElements = document.querySelectorAll(".hidden");
+    const hiddenElements = document.querySelectorAll(".hidden, .hiddenStatic");
     hiddenElements.forEach((element) => observer.observe(element));
   });
 
