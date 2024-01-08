@@ -19,16 +19,9 @@
 
   > svg:first-child {
     top: -20px;
-    right: -20px;
-    width: 200px;
-    height: 200px;
-  }
-
-  > svg:last-child {
-    bottom: 0px;
-    left: 0px;
-    width: 75px;
-    height: 150px;
+    left: -20px;
+    width: 350px;
+    height: 250px;
   }
 }
 
@@ -69,14 +62,12 @@
   }
 }
 
-@media screen and (min-width: 744px) {
+//TODO:
+@media screen and (min-width: 1440px) {
   .container > svg:first-child {
-    width: 250px;
+    top: 0px;
+    left: 0px;
+    width: 350px;
     height: 250px;
-  }
-
-  .container > svg:last-child {
-    width: 100px;
-    height: 200px;
   }
 }

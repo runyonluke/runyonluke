@@ -3,7 +3,7 @@ import React from "react";
 /**
  * An animated graphic that plays on repeat
  */
-export default function GraphicTwo(): React.ReactElement {
+export default function GraphicOne(): React.ReactElement {
   return (
     <svg
       width="250"

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./_skills.module.scss";
 import { SKILLS } from "../../util/constants/SKILLS";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import Graphics from "./Graphics/Graphics";
 
 /**
  * The products and languages I know well
@@ -95,6 +96,7 @@ export default function Skills(): React.ReactElement {
           <ChevronRightIcon />
         </button>
       </div>
+      <Graphics />
     </div>
   );
 }
