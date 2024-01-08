@@ -5,6 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
 /**
  * The products and languages I know well
+ * TODO: make swipe-able
  */
 export default function Skills(): React.ReactElement {
   // only one skill gets the "stage"
