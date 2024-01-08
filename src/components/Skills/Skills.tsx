@@ -1,16 +1,23 @@
 import React from "react";
 import styles from "./_skills.module.scss";
+
 import { SKILLS } from "../../util/constants/SKILLS";
+import useSwipe from "../../util/functions/useSwipe";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import Graphics from "./Graphics/Graphics";
 
 /**
  * The products and languages I know well
- * TODO: make swipe-able
  */
 export default function Skills(): React.ReactElement {
   // only one skill gets the "stage"
   const [selectedSkill, setSelectedSkill] = React.useState<number>(0);
+
+  // handles all the swipe events for the cards
+  const swipeHandlers = useSwipe({
+    left: () => !disabledNext() && next(),
+    right: () => !disabledLast() && last(),
+  });
 
   const MOBILE_TO_TABLET = 744;
   const TABLET_TO_MOBILE = 1440;
@@ -44,11 +51,24 @@ export default function Skills(): React.ReactElement {
     setSelectedSkill(selectedSkill + 1);
   };
 
+  // if there is no card available to advance to
+  const disabledNext = () => {
+    return window.innerWidth < TABLET_TO_MOBILE
+      ? window.innerWidth < MOBILE_TO_TABLET
+        ? selectedSkill === SKILLS_LENGTH - 1
+        : selectedSkill === SKILLS_LENGTH - 2
+      : selectedSkill === SKILLS_LENGTH - 3;
+  };
+
+  // if there is no card available to return to
+  const disabledLast = () => {
+    return selectedSkill === 0;
+  };
   // so we don't need to recalculate the length every render
   const SKILLS_LENGTH = SKILLS.length;
 
   return (
-    <div className={styles.container + " hidden"}>
+    <div {...swipeHandlers} className={styles.container + " hidden"}>
       <h2>Skills</h2>
 
       {SKILLS.map((skill, index) => (
@@ -75,7 +95,7 @@ export default function Skills(): React.ReactElement {
           className={styles.icon}
           type="button"
           title="Last"
-          disabled={selectedSkill === 0}
+          disabled={disabledLast()}
           onClick={last}
         >
           <ChevronLeftIcon />
@@ -84,13 +104,7 @@ export default function Skills(): React.ReactElement {
           className={styles.icon}
           type="button"
           title="Next"
-          disabled={
-            window.innerWidth < TABLET_TO_MOBILE
-              ? window.innerWidth < MOBILE_TO_TABLET
-                ? selectedSkill === SKILLS_LENGTH - 1
-                : selectedSkill === SKILLS_LENGTH - 2
-              : selectedSkill === SKILLS_LENGTH - 3
-          }
+          disabled={disabledNext()}
           onClick={next}
         >
           <ChevronRightIcon />
