@@ -7,6 +7,7 @@ import { setSelectedTab } from "../../store/root/rootSlice";
 import ContactForm from "./ContactForm/ContactForm";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { RootState } from "../../store/store";
+import Graphics from "./Graphics/Graphics";
 
 /**
  * The area describing how to get in touch with me
@@ -55,6 +56,7 @@ export default function Contact(): React.ReactElement {
           </p>
         </div>
       )}
+      <Graphics />
     </section>
   );
 }

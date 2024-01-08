@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./_graphic.module.scss";
+import styles from "./_graphics.module.scss";
 import GraphicTwo from "./SVGs/GraphicTwo";
 import GraphicOne from "./SVGs/GraphicOne";
 
