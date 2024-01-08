@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./_graphics.module.scss";
-import GraphicOne from "./RENAMEME/GraphicOne";
+import GraphicOne from "./SVGs/GraphicOne";
 
 /**
  * An animated graphic that plays on repeat

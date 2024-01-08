@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./_graphics.module.scss";
-import GraphicTwo from "./RENAMEME/GraphicTwo";
-import GraphicOne from "./RENAMEME/GraphicOne";
+import GraphicTwo from "./SVGs/GraphicTwo";
+import GraphicOne from "./SVGs/GraphicOne";
 
 /**
  * An animated graphic that plays on repeat
