@@ -43,7 +43,7 @@ export default function LinkedIn(): React.ReactElement {
               <i className={styles.imgContainer}>
                 <img src="linkedin.svg" alt="LinkedIn logo" />
               </i>
-              <span>Connect on LInkedIn</span>
+              <span>Connect on LinkedIn</span>
             </a>
           </div>
         </div>
