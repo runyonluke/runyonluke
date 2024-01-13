@@ -12,6 +12,8 @@
 .content {
   width: 100%;
   max-width: var(--maxWidth);
+
+  z-index: 3;
 }
 
 .contentCentered {
