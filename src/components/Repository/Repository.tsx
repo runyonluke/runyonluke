@@ -31,7 +31,7 @@ export default function Repository(): React.ReactElement {
                   {repository.owner.login}
                 </a>
                 /
-                <a className={styles.projectName} href={repository.url}>
+                <a className={styles.projectName} href={repository.html_url}>
                   {repository.name}
                 </a>
               </div>

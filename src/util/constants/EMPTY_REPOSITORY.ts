@@ -9,7 +9,7 @@ export const EMPTY_REPOSITORY: Repository = {
     html_url: "",
   },
   description: "",
-  url: "",
+  html_url: "",
   watcher_count: 0,
   forks_count: 0,
   created_at: "",

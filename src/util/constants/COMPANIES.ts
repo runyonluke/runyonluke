@@ -6,8 +6,8 @@ export const COMPANIES: Company[] = [
     jobTitle: "Staff Software Engineer",
     dates: "Current",
     bullets: [
-      "Worked on a variety of Defense, Research, and other assorted software application projects using Agile Workflow",
-      "Working directly with clients, including being the primary point of contact for projects",
+      "Contributed to a range of projects encompassing defense, research, and other various software applications, employing the Agile Workflow methodology for effective collaboration",
+      "Established direct client engagement, serving as the primary point of contract for projects and ensuring effective communication throughout.",
       "Supervised software engineers and graphic designers in designing, planning, and programming web applications",
     ],
   },
@@ -16,8 +16,8 @@ export const COMPANIES: Company[] = [
     jobTitle: "Front-end Web Development Intern",
     dates: "October 2019 - August 2020",
     bullets: [
-      "Worked on team to develop a Microservice Customer Relationship Management software using Agile workflow",
-      "Worked collaboratively with students and professionals from all over the United States",
+      "Contributed to the development of microservice Customer Relationship Management software as part of a collaborative team, implementing Agile workflow for enhanced efficiency",
+      "Collaborated seamlessly with a diverse group of students and professionals nationwide to achieve project goals and foster a dynamic working environment",
     ],
   },
 ];

@@ -41,11 +41,11 @@ export default function Experience(): React.ReactElement {
             Engineer working on a variety of projects in the Defense industry.
           </p>
           <p>
-            I have had the opportunity to be a supervisor, have had a hand in
-            marketing and recruiting, have trained new hires, and have been able
-            to get experience in a variety of important parts of industry. Much
-            of my technical experience involves front-end development. You can
-            see the specifics down in the skills section below!
+            I have had the opportunity to be a supervisor, had a hand in
+            marketing and recruiting, trained new hires, and been able to get
+            experience in a variety of important parts of industry. Much of my
+            technical experience involves front-end development. You can see the
+            specifics down in the skills section below!
           </p>
         </div>
         <Graphics />

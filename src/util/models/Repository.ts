@@ -9,7 +9,7 @@ export interface Repository {
       }
     | undefined;
   description: string;
-  url: string;
+  html_url: string;
   watcher_count: number;
   forks_count: number;
   created_at: string;

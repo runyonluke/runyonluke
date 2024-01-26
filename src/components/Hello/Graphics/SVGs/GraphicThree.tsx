@@ -11,7 +11,7 @@ export default function VectorGraphic3(): React.ReactElement {
       viewBox="0 0 399 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ "--delay": "9s" } as React.CSSProperties}
+      style={{ "--delay": "7s" } as React.CSSProperties}
     >
       <g clipPath="url(#clip0_83_182)">
         <g style={{ "--order": 0 } as React.CSSProperties}>
