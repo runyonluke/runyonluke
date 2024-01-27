@@ -13,6 +13,7 @@ $imgOffset: 10px;
 .content {
   width: 100%;
   max-width: var(--maxWidth);
+  z-index: 3;
 }
 
 .content > :first-child {
