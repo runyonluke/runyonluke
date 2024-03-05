@@ -32,6 +32,18 @@ export const SKILLS: Skill[] = [
     category: "Content Management System",
   },
   {
+    name: ".NET",
+    imageUrl: "dotnet.jpg",
+    url: "https://dotnet.microsoft.com/en-us/",
+    category: "Software Framework",
+  },
+  {
+    name: "Entity Framework Core",
+    imageUrl: "entity-framework.jpg",
+    url: "https://learn.microsoft.com/en-us/aspnet/entity-framework/",
+    category: "Mapping Framework for .NET",
+  },
+  {
     name: "Git",
     imageUrl: "git.jpg",
     url: "https://git-scm.com/",

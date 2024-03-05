@@ -25,8 +25,8 @@ export default function Hello(): React.ReactElement {
             ))}
           </div>
           <span className={styles.focused}>I'm Luke Runyon</span>
-          <span>Front-end</span>
-          <span>Web Developer</span>
+          <span>Software</span>
+          <span>Developer</span>
         </div>
       </div>
       <Graphics />
